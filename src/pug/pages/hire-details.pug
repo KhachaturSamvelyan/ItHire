@@ -1,0 +1,843 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'ITHIRE';
+
+block links
+    - var link = 'hire-details.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/header.pug
+
+ 
+block content
+    .hire-main
+        .hire-main-title
+            h1 Hire #450912
+            .hire-main-title-right
+                a(href="") 
+                    svg(xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none")
+                        path(d="M2.33366 2.16667V13.8333H15.667V3.83333H8.65533L6.98866 2.16667H2.33366ZM9.34533 2.16667H16.5003C16.7213 2.16667 16.9333 2.25446 17.0896 2.41074C17.2459 2.56702 17.3337 2.77899 17.3337 3V14.6667C17.3337 14.8877 17.2459 15.0996 17.0896 15.2559C16.9333 15.4122 16.7213 15.5 16.5003 15.5H1.50033C1.27931 15.5 1.06735 15.4122 0.91107 15.2559C0.75479 15.0996 0.666992 14.8877 0.666992 14.6667V1.33333C0.666992 1.11232 0.75479 0.900358 0.91107 0.744078C1.06735 0.587797 1.27931 0.5 1.50033 0.5H7.67866L9.34533 2.16667Z" fill="#E65F05")
+                    p Files
+                a(href="")
+                    svg(xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none")
+                        path(d="M14.6667 17.3333H1.33333C1.11232 17.3333 0.900358 17.2455 0.744078 17.0893C0.587797 16.933 0.5 16.721 0.5 16.5V1.5C0.5 1.27898 0.587797 1.06702 0.744078 0.910742C0.900358 0.754461 1.11232 0.666664 1.33333 0.666664H14.6667C14.8877 0.666664 15.0996 0.754461 15.2559 0.910742C15.4122 1.06702 15.5 1.27898 15.5 1.5V16.5C15.5 16.721 15.4122 16.933 15.2559 17.0893C15.0996 17.2455 14.8877 17.3333 14.6667 17.3333ZM13.8333 15.6667V2.33333H2.16667V15.6667H13.8333ZM4.66667 4.83333H11.3333V6.5H4.66667V4.83333ZM4.66667 8.16666H11.3333V9.83333H4.66667V8.16666ZM4.66667 11.5H8.83333V13.1667H4.66667V11.5Z" fill="#E65F05")
+                    p See list
+                a(href="")
+                    svg(xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none")
+                        path(d="M3.02366 15.5L3.00699 15.5167L2.98949 15.5H1.49366C1.27434 15.4998 1.06407 15.4125 0.909067 15.2573C0.754061 15.1022 0.666992 14.8918 0.666992 14.6725V1.3275C0.668517 1.10865 0.756076 0.899181 0.910753 0.744348C1.06543 0.589515 1.27481 0.501746 1.49366 0.5H16.507C16.9637 0.5 17.3337 0.870833 17.3337 1.3275V14.6725C17.3321 14.8914 17.2446 15.1008 17.0899 15.2557C16.9352 15.4105 16.7258 15.4983 16.507 15.5H3.02366ZM15.667 10.5V2.16667H2.33366V13.8333L10.667 5.5L15.667 10.5ZM15.667 12.8567L10.667 7.85667L4.69033 13.8333H15.667V12.8567ZM5.66699 7.16667C5.22497 7.16667 4.80104 6.99107 4.48848 6.67851C4.17592 6.36595 4.00033 5.94203 4.00033 5.5C4.00033 5.05797 4.17592 4.63405 4.48848 4.32149C4.80104 4.00893 5.22497 3.83333 5.66699 3.83333C6.10902 3.83333 6.53294 4.00893 6.8455 4.32149C7.15806 4.63405 7.33366 5.05797 7.33366 5.5C7.33366 5.94203 7.15806 6.36595 6.8455 6.67851C6.53294 6.99107 6.10902 7.16667 5.66699 7.16667Z" fill="#E65F05")
+                    p Screenshots
+                        
+
+        .hire-main-info
+            .hire-main-info-blok
+                .hire-main-info-blok-item
+                    span Client name
+                    p Jenny Wilson
+                .hire-main-info-blok-item
+                    span Freelancer name
+                    p Marvin McKinney
+                .hire-main-info-blok-item
+                    span Freelancer email
+                    p kenzi.lawson@example.com
+                .hire-main-info-blok-item
+                    span Manual time
+                    .switch
+                        label
+                            input.switch-input(type="checkbox" checked).checkbox
+                            span
+                                span
+                        p Allow
+                .hire-main-info-blok-item
+                    span Track the project
+                    .switch
+                        label
+                            input.switch-input(type="checkbox" ).checkbox
+                            span
+                                span
+                        p No
+            .hire-main-info-blok
+                .hire-main-info-blok-item
+                    span Pay rate
+                    p $20 /h
+                .hire-main-info-blok-item
+                    span Weekly limit
+                    p 10 hours
+                .hire-main-info-blok-item
+                    span Status
+                    p Active
+                .hire-main-info-blok-item
+                    span Action
+                    p Active
+                .hire-main-info-blok-item
+                    span Bonus
+                    p 0
+        
+
+        .hire-main-desc
+            span Description
+            p Condimentum tempor cursus purus pretium. Mauris felis eget purus, pharetra fringilla tincidunt sed. Turpis integer elementum est faucibus euismod vitae quis dis cum.
+               
+              
+        .hire-main-line
+        
+        .help_item
+            .hire-main-project
+                input#question1.questions(type='checkbox' checked)
+                .plus 
+                    img(src="img/arr1.svg", alt="")
+                label.question(for='question1')
+                    h2 Project and team
+                .answers.project-team
+                    .hire-main-project-items
+                        .project-member
+                            .project-member-item
+                                .project-member-item-team
+                                    h3 Team members
+                                    .wrapper2
+                                        .tag-area2
+                                            .tag2
+                                                .tag-title
+                                                    p Kyrone Fox
+                                                img(src="img/avatar.png", alt="")
+                                            .tag2
+                                                .tag-title
+                                                    p Ryrone Kox
+                                                .name_circle(style="background-color:#96cbe9")
+                                                    span RK
+                                            .tag2
+                                                .tag-title
+                                                    p Tyrone Fox
+                                                .name_circle(style="background-color:#EFCC89")
+                                                    span TF
+                                            .tag2
+                                                .tag-title
+                                                    p Kyrone Fox
+                                                img(src="img/avatar.png", alt="")
+                                            .tag2
+                                                .tag-title
+                                                    p Kyrone Fox
+                                                img(src="img/avatar.png", alt="")
+                                            .tag2
+                                                .tag-title
+                                                    p Ryrone Kox
+                                                .name_circle(style="background-color:#96cbe9")
+                                                    span RK
+                                            .tag2
+                                                .tag-title
+                                                    p Tyrone Fox
+                                                .name_circle(style="background-color:#EFCC89")
+                                                    span TF
+                                            .tag2
+                                                .tag-title
+                                                    p Kyrone Fox
+                                                img(src="img/avatar.png", alt="")
+                                        
+                                        .dropdown2
+                                            div.add-tag2
+                                                .span
+                                                    span
+                                                        svg(xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none")
+                                                            path(d="M5.16666 5.16666V0.166656H6.83332V5.16666H11.8333V6.83332H6.83332V11.8333H5.16666V6.83332H0.166656V5.16666H5.16666Z" fill="#E65F05")
+                                                    .menu-hide2(style="z-index:9;")
+                                                        .menu-content
+                                                            form
+                                                                svg(xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none")
+                                                                    path(d="M14.0259 12.8475L17.5951 16.4158L16.4159 17.595L12.8476 14.0258C11.5199 15.0902 9.86842 15.6691 8.16675 15.6667C4.02675 15.6667 0.666748 12.3067 0.666748 8.16666C0.666748 4.02666 4.02675 0.666656 8.16675 0.666656C12.3067 0.666656 15.6667 4.02666 15.6667 8.16666C15.6692 9.86832 15.0903 11.5198 14.0259 12.8475ZM12.3542 12.2292C13.4118 11.1416 14.0025 9.68368 14.0001 8.16666C14.0001 4.94332 11.3892 2.33332 8.16675 2.33332C4.94341 2.33332 2.33341 4.94332 2.33341 8.16666C2.33341 11.3892 4.94341 14 8.16675 14C9.68377 14.0024 11.1417 13.4118 12.2292 12.3542L12.3542 12.2292Z" fill="#78797D")
+                                                                input(type="text" placeholder="Search peoples")
+                                                            ul.dropdown-menu2
+                                                                li.added2
+                                                                    img(src="img/avatar.png", alt="")
+                                                                    p Tyrone Mox
+                                                                li 
+                                                                    .name_circle(style="background-color:#EFCC89")
+                                                                        span TF
+                                                                    p Tyrone Fox
+                                                                li
+                                                                    .name_circle(style="background-color:#e9c896")
+                                                                        span AS
+                                                                    p Arrell Sell
+                                                                li
+                                                                    img(src="img/avatar9.png", alt="")
+                                                                    p Darrell Bell
+                                                                li
+                                                                    .name_circle(style="background-color:#e08ae7")
+                                                                        span ES
+                                                                    p Eduardo Simmmons
+                                                                li.added2
+                                                                    .name_circle(style="background-color:#96cbe9")
+                                                                        span RK
+                                                                    p Robertson Kavannah 
+                                                                li 
+                                                                    .name_circle(style="background-color:#aabef0")
+                                                                        span MB
+                                                                    p Marjorie Black
+                                                                li
+                                                                    img(src="img/avatar8.png", alt="")
+                                                                    p Eduardo Nimmmons
+                                                                li
+                                                                    .name_circle(style="background-color:#e08ae7")
+                                                                        span ES
+                                                                    p Eduardo Simmmons
+                                                                li
+                                                                    .name_circle(style="background-color:#96cbe9")
+                                                                        span RK
+                                                                    p Robertson Kavannah 
+                                                                li 
+                                                                    .name_circle(style="background-color:#aabef0")
+                                                                        span MB
+                                                                    p Marjorie Black
+                                                                li
+                                                                    img(src="img/avatar8.png", alt="")
+                                                                    p Eduardo Nimmmons
+                                                    
+
+
+                                .project-member-item-manager
+                                    h3 Managers
+                                    .wrapper3
+                                        .tag-area3
+                                            .tag3
+                                                .tag_overlay
+                                                    svg(xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none")
+                                                        path(d="M4.99999 4.05732L8.29999 0.757324L9.24266 1.69999L5.94266 4.99999L9.24266 8.29999L8.29999 9.24266L4.99999 5.94266L1.69999 9.24266L0.757324 8.29999L4.05732 4.99999L0.757324 1.69999L1.69999 0.757324L4.99999 4.05732Z" fill="white" fill-opacity="0.88")
+                                                    
+                                                .tag-title
+                                                    p Kyrone Fox
+                                                img(src="img/avatar10.png", alt="")
+                                            .tag3
+                                                .tag_overlay
+                                                    svg(xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none")
+                                                        path(d="M4.99999 4.05732L8.29999 0.757324L9.24266 1.69999L5.94266 4.99999L9.24266 8.29999L8.29999 9.24266L4.99999 5.94266L1.69999 9.24266L0.757324 8.29999L4.05732 4.99999L0.757324 1.69999L1.69999 0.757324L4.99999 4.05732Z" fill="white" fill-opacity="0.88")
+                                                .tag-title
+                                                    p Robertson Kavannah 
+                                                img(src="img/avatar2.png", alt="")
+                                            .tag3
+                                                .tag_overlay
+                                                    svg(xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none")
+                                                        path(d="M4.99999 4.05732L8.29999 0.757324L9.24266 1.69999L5.94266 4.99999L9.24266 8.29999L8.29999 9.24266L4.99999 5.94266L1.69999 9.24266L0.757324 8.29999L4.05732 4.99999L0.757324 1.69999L1.69999 0.757324L4.99999 4.05732Z" fill="white" fill-opacity="0.88")
+                                                .tag-title
+                                                    p Sara Trimbol
+                                                img(src="img/avatar11.png", alt="")
+                                       
+                                        .dropdown3
+                                            div.add-tag3
+                                                .span
+                                                    span
+                                                        svg(xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none")
+                                                            path(d="M5.16666 5.16666V0.166656H6.83332V5.16666H11.8333V6.83332H6.83332V11.8333H5.16666V6.83332H0.166656V5.16666H5.16666Z" fill="#E65F05")
+                                                    .menu-hide3(style="z-index:9;")
+                                                        .menu-content
+                                                            form
+                                                                svg(xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none")
+                                                                    path(d="M14.0259 12.8475L17.5951 16.4158L16.4159 17.595L12.8476 14.0258C11.5199 15.0902 9.86842 15.6691 8.16675 15.6667C4.02675 15.6667 0.666748 12.3067 0.666748 8.16666C0.666748 4.02666 4.02675 0.666656 8.16675 0.666656C12.3067 0.666656 15.6667 4.02666 15.6667 8.16666C15.6692 9.86832 15.0903 11.5198 14.0259 12.8475ZM12.3542 12.2292C13.4118 11.1416 14.0025 9.68368 14.0001 8.16666C14.0001 4.94332 11.3892 2.33332 8.16675 2.33332C4.94341 2.33332 2.33341 4.94332 2.33341 8.16666C2.33341 11.3892 4.94341 14 8.16675 14C9.68377 14.0024 11.1417 13.4118 12.2292 12.3542L12.3542 12.2292Z" fill="#78797D")
+                                                                input(type="text" placeholder="Search peoples")
+                                                            ul.dropdown-menu3
+                                                                li.added3
+                                                                    .li-content
+                                                                        img(src="img/avatar10.png", alt="")
+                                                                        p Tyrone Mox
+                                                                    h5 Remove
+                                                                li 
+                                                                    .li-content
+                                                                        img(src="img/avatar4.png", alt="")
+                                                                        p Tyrone Fox
+                                                                    h5 Remove
+                                                                li.added3
+                                                                    .li-content
+                                                                        img(src="img/avatar11.png", alt="")
+                                                                        p Arrell Sell
+                                                                    h5 Remove
+                                                                li
+                                                                    .li-content
+                                                                        img(src="img/avatar9.png", alt="")
+                                                                        p Darrell Bell
+                                                                    h5 Remove
+                                                                li
+                                                                    .li-content
+                                                                        img(src="img/avatar6.png", alt="")
+                                                                        p Eduardo Simmmons
+                                                                    h5 Remove
+                                                                li.added3
+                                                                    .li-content
+                                                                        img(src="img/avatar2.png", alt="")
+                                                                        p Robertson Kavannah
+                                                                    h5 Remove 
+                                                                li
+                                                                    .li-content
+                                                                        img(src="img/avatar7.png", alt="")
+                                                                        p Marjorie Black
+                                                                    h5 Remove
+                                                                li
+                                                                    .li-content
+                                                                        img(src="img/avatar8.png", alt="")
+                                                                        p Eduardo Nimmmons
+                                                                    h5 Remove
+                                                                li
+                                                                    .li-content
+                                                                        img(src="img/avatar6.png", alt="")
+                                                                        p Eduardo Simmmons
+                                                                    h5 Remove
+                                                                li
+                                                                    .li-content
+                                                                        img(src="img/avatar2.png", alt="")
+                                                                        p Robertson Kavannah
+                                                                    h5 Remove 
+                                                                li 
+                                                                    .li-content
+                                                                        img(src="img/avatar7.png", alt="")
+                                                                        p Marjorie Black
+                                                                    h5 Remove
+                                                                li
+                                                                    .li-content
+                                                                        img(src="img/avatar8.png", alt="")
+                                                                        p Eduardo Nimmmons
+                                                                    h5 Remove
+
+        .help_item
+            .hire-main-project
+                input#question2.questions(type='checkbox' checked)
+                .plus 
+                    img(src="img/arr1.svg", alt="")
+                label.question(for='question2')
+                    h2 Transaction
+                .answers
+                    .acra-blok 
+                        h3 Arca transactions
+                        table
+                            tr
+                                th Order ID
+                                th Date
+                                th Amount
+                                th Refunds sum amount
+                                th Error code
+                                th Order status
+                                th Error message
+                            tr
+                                td
+                                    span eejah69d-8g61-0krz-m39c-1pn3bycp09v4
+                                    .order-btn
+                                        button Refund
+                                        button Bank Refunds
+                                td
+                                    span Mar 18, 2021 23:14:09
+                                td
+                                    span $154,50
+                                td 
+                                    span 0
+                                td 
+                                    span 0
+                                td 
+                                    span A complete authorization of the order amount have done
+                                td 
+                                    span Approved. Payment post authorized
+                            tr.pink
+                                td
+                                    span eejah69d-8g61-0krz-m39c-1pn3bycp09v4
+                                    .order-btn
+                                        button Refund
+                                        button Bank Refunds
+                                td
+                                    span Mar 18, 2021 23:14:09
+                                td
+                                    span $154,50
+                                td 
+                                    span 0
+                                td 
+                                    span 0
+                                td 
+                                    span A complete authorization of the order amount have done
+                                td 
+                                    span Approved. Payment post authorized
+                            tr
+                                td
+                                    span eejah69d-8g61-0krz-m39c-1pn3bycp09v4
+                                    .order-btn
+                                        button Refund
+                                        button Bank Refunds
+                                td
+                                    span Mar 18, 2021 23:14:09
+                                td
+                                    span $154,50
+                                td 
+                                    span 0
+                                td 
+                                    span 0
+                                td 
+                                    span A complete authorization of the order amount have done
+                                td 
+                                    span Approved. Payment post authorized
+                            tr
+                                td
+                                    span eejah69d-8g61-0krz-m39c-1pn3bycp09v4
+                                    .order-btn
+                                        button Refund
+                                        button Bank Refunds
+                                td
+                                    span Mar 18, 2021 23:14:09
+                                td
+                                    span $154,50
+                                td 
+                                    span 0
+                                td 
+                                    span 0
+                                td 
+                                    span A complete authorization of the order amount have done
+                                td 
+                                    span Approved. Payment post authorized
+
+                            tr
+                                td
+                                    button.load Load more
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                
+                    .paypal-blok
+                        h3 PayPal transactions
+                        table
+                            tr
+                                th Transaction ID
+                                th Date
+                                th Amount
+                                th Payer name
+                                th Email
+                                th Status
+                                th Action
+                            tr
+                                td
+                                    span I-YKUF4D6S7TCG
+                                td
+                                    span Mar 18, 2021 23:14:09
+                                td
+                                    span $154,50
+                                td
+                                    span Cameron Williamson
+                                td
+                                    span curtis.weaver@example.com
+                                td
+                                    span Completed
+                                td
+
+                            
+        .help_item
+            .hire-main-project
+                input#question3.questions(type='checkbox' checked)
+                .plus 
+                    img(src="img/arr1.svg", alt="")
+                label.question(for='question3')
+                    h2 Activity
+                .answers
+                    .activity
+                        h3 Arca transactions
+                        table
+                            tr
+                                th Week
+                                th Sun
+                                th Mon
+                                th Tue
+                                th Wed
+                                th Thu
+                                th Fri
+                                th Sat
+                                th Paid
+                                th Unpaid
+                                th Submited
+                                th Discarded
+                                th Total
+                                th Amountv
+                            tr
+                                td
+                                    span Mar 14 - Mar 21
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Reset
+                                td.blue
+                                    span 00:00
+                                    button Submit
+                                td
+                                    span 00:00
+                                td
+                                    span 00:00
+                                    button Restore
+                                td
+                                    span 00:00
+                                td
+                                    span $50,50
+                               
+                            tr
+                                td
+                                    span Mar 14 - Mar 21
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Reset
+                                td.blue
+                                    span 00:00
+                                    button Submit
+                                td
+                                    span 00:00
+                                td
+                                    span 00:00
+                                    button Restore
+                                td
+                                    span 00:00
+                                td
+                                    span $50,50
+                            tr
+                                td
+                                    span Mar 14 - Mar 21
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Reset
+                                td.blue
+                                    span 00:00
+                                    button Submit
+                                td
+                                    span 00:00
+                                td
+                                    span 00:00
+                                    button Restore
+                                td
+                                    span 00:00
+                                td
+                                    span $50,50
+                               
+                            tr
+                                td
+                                    span Mar 14 - Mar 21
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Edit
+                                td
+                                    span 00:00
+                                    button Reset
+                                td.blue
+                                    span 00:00
+                                    button Submit
+                                td
+                                    span 00:00
+                                td
+                                    span 00:00
+                                    button Restore
+                                td
+                                    span 00:00
+                                td
+                                    span $50,50
+                               
+
+                            tr
+                                td
+                                    button.load Load more
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td 
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+
+
+
+                    .hours
+                        .hours-blok
+                            .hours-blok-item
+                                h3 Hours detail total
+                                .hours-blok-item-info
+                                    .hours-blok-item-info-item
+                                        span Paid hours
+                                        p 10:00
+                                    .hours-blok-item-info-item
+                                        span Unpaid hours
+                                        .hours-blok-item-info-item-p
+                                            p 02:40
+                                            button Reset
+                                    .hours-blok-item-info-item-charge
+                                        span Charge hours
+                                        button Charge 0$
+                            .hours-blok-item
+                                h3 Manually set paid hours
+                                .hours-blok-item-info-hour
+                                    span Set paid hours
+                                    .hours-blok-item-info-btn
+                                        input(type="text" placeholder="02:40")
+                                        button Update
+                            .hours-blok-item
+                                h3 Worked hours
+                                .hours-blok-item-info-total
+                                    .hours-blok-item-info-work
+                                        span Today worked
+                                        p 01:00
+                                    .hours-blok-item-info-work
+                                        span Week worked
+                                        p 03:40
+
+
+                    .contract
+                        h3 Contract activities
+                        table
+                            tr
+                                th Date
+                                th Status
+                            tr
+                                td Mar 14, 2021 16:09:35
+                                td Contract started
+                            tr
+                                td Mar 14, 2021 16:09:35
+                                td Contract started
+
+                    .biling
+                        h3 Billing details
+                        table
+                           
+                            tr
+                                td Ameria Card
+                                td Added: Mar 14, 2021 17:40:09
+                                td Payment method exist
+                                td
+                                    .btn
+                                        button.blue
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none")
+                                                path(d="M4.00036 5.586L8.59636 0.989502L9.30386 1.6965L4.00036 7L0.818359 3.818L1.52536 3.111L4.00036 5.586Z" fill="#066FF9")
+                                            |Primary
+                                        button.red Remove
+                            tr
+                                td Ameria Card
+                                td Added: Mar 14, 2021 17:40:09
+                                td Payment method exist
+                                td
+                                    .btn
+                                        button.blue Set as primary
+                                        button.red Remove
+
+
+
+        .help_item
+            .hire-main-project
+                input#question4.questions(type='checkbox' checked)
+                .plus 
+                    img(src="img/arr1.svg", alt="")
+                label.question(for='question4')
+                    h2 Other
+                .answers
+                    .custom
+                        h3 Custom notification
+                        .custom-blok
+                            .custom-blok-message
+                                p Message
+                                input(type="text")
+                            .custom-blok-week
+                                p Weeks
+                                input(type="text")
+                            .custom-blok-hours
+                                p Submited hours
+                                .custom-blok-hours-item
+                                    input(type="text" placeholder="00:00")
+                                    button Submit
+                    .custom
+                        h3 Edit details
+                        .custom-blok
+                            .custom-blok-message
+                                p Action
+                                input(type="text" placeholder="Active")
+                            .custom-blok-week
+                                p Paid hours
+                                input(type="text" placeholder="40:30")
+                            .custom-blok-hours
+                                p Unpaid hours
+                                .custom-blok-hours-item
+                                    input(type="text" placeholder="04:50")
+                                    button Submit
+                    .bonus
+                        .bonus-blok
+                            .bonus-blok-item
+                                p Bonuses
+                                .bonus-blok-item-input
+                                    input(type="text" placeholder="0")
+                                    button Update
+                            .bonus-blok-item
+                                p Hire status
+                                .bonus-blok-item-input
+                                    input(type="text" placeholder="Active")
+                                    button Submit
+                            .bonus-blok-item
+                                p Hire action
+                                .bonus-blok-item-input
+                                    input(type="text" placeholder="Active")
+                                    button Submit
+                    .att
+                        h3 Attachment
+                        .att-blok
+                            p No attachment
+                    
+                    .invoices
+                        h3 Edit details
+                        .invoices-blok
+                            .invoices-blok-message
+                                p Hour
+                                input(type="text" placeholder="Active")
+                            .invoices-blok-week
+                                p Date
+                                input(type="text" placeholder="mm/dd/yyyy").datep
+                            .invoices-blok-hours
+                                p Due date
+                                .invoices-blok-hours-item
+                                    input(type="text" placeholder="mm/dd/yyyy").datep
+                                    button Add
+                        table
+                            tr
+                                td 10:00
+                                td 03/05/2021
+                                td 15/05/2021
+                                td 
+                                    button Remove
+                            tr
+                                td 10:00
+                                td 03/05/2021
+                                td 15/05/2021
+                                td 
+                                    button Remove
+                            tr
+                                td 10:00
+                                td 03/05/2021
+                                td 15/05/2021
+                                td 
+                                    button Remove
+
+                    .sent
+                        h3 Sent mails
+                        table
+                            tr
+                                th Mail
+                                th Status
+                                th Send time
+                                th Last open
+                              
+                            tr
+                                td
+                                    span You have unread message
+                                td
+                                    span Opened
+                                td
+                                    span Mar 14, 2021 16:09:35
+                                td
+                                    span Mar 15, 2021 16:09:35
+                            tr
+                                td
+                                    span You have unread message
+                                td
+                                    span Opened
+                                td
+                                    span Mar 14, 2021 16:09:35
+                                td
+                                    span Mar 15, 2021 16:09:35
+                            tr.pink
+                                td
+                                    span You have unread message
+                                td
+                                    span Opened
+                                td
+                                    span Mar 14, 2021 16:09:35
+                                td
+                                    span 
+                            tr
+                                td
+                                    span You have unread message
+                                td
+                                    span Opened
+                                td
+                                    span Mar 14, 2021 16:09:35
+                                td
+                                    span Mar 15, 2021 16:09:35

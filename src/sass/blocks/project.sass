@@ -1,0 +1,1105 @@
+.project
+    background: #FFFFFF
+    box-shadow: 0px 0.1px 0.3px rgba(18, 18, 18, 0.1), 0px 1px 2px rgba(18, 18, 18, 0.16)
+    border-radius: 8px
+    padding: 25px
+    position: relative
+    margin-bottom: 16px
+    &-edit
+        position: absolute
+        right: 25px
+        top: 25px
+        display: flex
+        svg
+            cursor: pointer
+            
+        &-item
+            margin-right: 28px
+            position: relative
+            cursor: pointer
+            &:hover
+                img
+                    opacity: 1
+            img
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: -50px
+                opacity: 0
+
+    h2
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        font-feature-settings: 'cv10' on, 'cv05' on
+        color: #1B1D22
+        margin-bottom: 12px
+        margin-top: 12px
+
+    &-header
+        display: flex
+        .red
+            display: block
+            margin-left: 64px
+            span 
+                color: #D30D1E
+        p
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 20px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #78797D
+            span
+                color:#1B1D22
+                margin-left: 5px
+            svg
+                margin-left: 8px
+            &:nth-child(2)
+                margin-left: 111px
+                margin-right: 64px
+                display: block
+
+
+    .wrapper
+        display: flex
+        align-items: flex-start
+        margin-bottom: 16px
+        .dropdown
+            margin-right: 4px
+            white-space: nowrap
+            .add-tag
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 600
+                font-size: 12px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #78797D
+                display: inline-block
+                background: #FFFFFF
+                border: 1px solid #D1D1D1
+                border-radius: 4px
+                padding: 2px 8px
+                cursor: pointer
+                position: relative
+                .menu-hide
+                    position: absolute
+                    visibility: hidden
+                    opacity: 0
+                    top: 0px
+                    left: 0
+                    background: transparent
+                    z-index: 11
+
+                svg
+                    margin-right: 5px
+                &:hover
+                    .menu-hide
+                        visibility: visible
+                        opacity: 1
+                        display: block
+                    
+                    color: #E65F05
+                    .add
+                        path
+                            fill: #E65F05
+
+                .dropdown-menu
+                    background: #FFFFFF
+                    box-shadow: 0px 1px 2px rgba(18, 18, 18, 0.1), 0px 8px 16px rgba(18, 18, 18, 0.16)
+                    border-radius: 8px
+                    padding: 22px 16px
+                    min-width: 240px
+                    margin-top: 30px
+                    overflow-y: scroll
+                    max-height: 352px
+                    
+                    &::-webkit-scrollbar
+                        width: 6px
+                        height: 88px
+
+                    &::-webkit-scrollbar-track 
+                        background: transparent
+                        margin-top: 16px
+
+                    &::-webkit-scrollbar-thumb
+                        background: rgba(0, 0, 0, 0.16)
+                        border-radius: 100px
+                    li
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 20px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        display: flex
+                        align-items: center
+                        color: #1B1D22
+                        position: relative
+                        svg
+                            &:first-child
+                                margin-right: 8px
+                            &:last-child
+                                margin-right: 0
+                                position: absolute
+                                right: 0
+                        &:not(:last-child)
+                            margin-bottom: 12px
+
+                    .added
+                        svg
+                            &:last-child
+                                path
+                                    fill: #52248F
+
+            
+
+
+        .tag-area
+            display: flex
+            flex-wrap: wrap
+            .tag
+                border-radius: 4px
+                font-family: Inter
+                font-style: normal
+                font-weight: 500
+                font-size: 12px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #FFFFFF
+                padding: 2px 8px
+                cursor: pointer
+                margin-bottom: 4px
+
+                &:not(:last-child)
+                    margin-right: 4px
+                span
+                    margin-left: 5px
+
+
+    &-member
+        display: flex
+        align-items: flex-start
+
+        &-item
+            display: flex
+            &-team
+                margin-right: 46px
+                h3
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+                    margin-bottom: 6px
+                .wrapper2
+                    display: flex
+                    .tag-area2
+                        display: flex
+                        max-width: 108px
+                        flex-wrap: wrap
+                        .tag2
+                            cursor: pointer
+                            position: relative
+                            margin-right: 4px
+                            min-height: 36px
+                            &:hover
+                                .tag-title
+                                    opacity: 1
+                                    visibility: visible
+                            .name_circle
+                                border-radius: 100%
+                                width: 32px
+                                height: 32px
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                span
+                                    border: none
+                                    font-family: Inter, sans-serif
+                                    font-style: normal
+                                    font-weight: 600
+                                    font-size: 10px
+                                    line-height: 16px
+                                    text-align: center
+                                    text-transform: uppercase
+                                    color: rgba(0, 0, 0, 0.8)
+                            .tag-title
+                                position: absolute
+                                top: -45px
+                                z-index: 99
+                                left: 50%
+                                transform: translateX(-50%)
+                                opacity: 0
+                                visibility: hidden
+                                padding: 6px 12px
+                                min-width: 108px
+                                min-height: 32px
+                                text-align: center
+                                min-width: 108px
+                                min-height: 32px
+                                background: white
+                                text-align: center
+                                border-radius: 4px
+                                box-shadow: 0px 6px 13px 1px #dedede
+                                &:after
+                                    content: url(../../img/down.svg)
+                                    position: absolute
+                                    bottom: -10px
+                                    left: 50%
+                                    transform: translateX(-50%)
+
+                                p
+                                    font-family: Inter, sans-serif
+                                    font-style: normal
+                                    font-weight: normal
+                                    font-size: 14px
+                                    line-height: 20px
+                                    font-feature-settings: 'cv10' on, 'cv05' on
+                                    color: #1B1D22
+                                    white-space: nowrap
+                            &:after
+                                content: url("../../img/ofline.svg")
+                                position: absolute
+                                bottom: 0
+                                right: 0
+                            &:first-child
+                                &:after
+                                    content: url("../../img/online.svg")
+                            
+                                
+                    .tag-plus
+                        margin-right: 4px
+                        position: relative
+                        cursor: pointer
+                        &:hover
+                            .tag-plus-hide
+                                opacity: 1
+                                visibility: visible
+                        .tag-plus-hide
+                            position: absolute
+                            z-index: 9
+                            background: transparent
+                            left: 50%
+                            transform: translateX(-50%)
+                            opacity: 0
+                            visibility: hidden
+                        .tag-plus-content
+                            padding: 12px 16px
+                            background: #FFFFFF
+                            box-shadow: 0px 1px 2px rgba(18, 18, 18, 0.1), 0px 8px 16px rgba(18, 18, 18, 0.16)
+                            border-radius: 8px
+                            min-width: 200px
+                            margin-top: 37px
+
+                            ul
+                                li
+                                    display: flex
+                                    align-items: center
+                                    .ofline
+                                        position: relative
+                                        &:after
+                                            position: absolute
+                                            content: url(../../img/ofline2.svg)
+                                            right: 7px
+                                            bottom: -5px
+                                    &:not(:last-child)
+                                        margin-bottom: 8px
+                                    img
+                                        margin-right: 8px
+                                    p
+                                        font-family: Inter
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 20px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #1B1D22
+                                        white-space: nowrap
+                        span
+                            width: 32px
+                            height: 32px
+                            font-family: Inter, sans-serif
+                            font-style: normal
+                            font-weight: 600
+                            font-size: 10px
+                            line-height: 16px
+                            text-align: center
+                            text-transform: uppercase
+                            font-feature-settings: 'cv10' on, 'cv05' on
+                            color: #53565A
+                            background: #E0E0E0
+                            border-radius: 100%
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            cursor: pointer
+                    .dropdown2
+                        .add-tag2
+                            .span
+                                position: relative
+                                cursor: pointer
+                                span
+                                    width: 32px
+                                    height: 32px
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    border: 1px solid #D1D1D1
+                                    border-radius: 100%
+                                    cursor: pointer
+                                    position: relative
+                                    z-index: 10
+                                    
+                                        
+                                &:hover
+                                    span
+                                        border: 1px solid #E65F05
+
+                                    .menu-hide2
+                                        opacity: 1
+                                        visibility: visible
+                    .menu-hide2
+                        background: transparent
+                        position: absolute
+                        top: 0
+                        opacity: 0
+                        visibility: hidden
+                        z-index: 9
+                        max-width: 35px
+                        .menu-content
+                            background: #FFFFFF
+                            box-shadow: 0px 1px 2px rgba(18, 18, 18, 0.1), 0px 8px 16px rgba(18, 18, 18, 0.16)
+                            border-radius: 8px
+                            padding: 16px
+                            min-width: 320px
+                            margin-top: 35px
+
+                            form
+                                margin-bottom: 20px
+                                position: relative
+                                svg
+                                    position: absolute
+                                    top: 50%
+                                    transform: translateY(-50%)
+                                    left: 11px
+                                input
+                                    font-family: Inter
+                                    font-style: normal
+                                    font-weight: normal
+                                    font-size: 14px
+                                    line-height: 24px
+                                    font-feature-settings: 'cv10' on, 'cv05' on
+                                    color: #78797D
+                                    background: #FFFFFF
+                                    border: 2px solid #E0E0E0
+                                    box-sizing: border-box
+                                    border-radius: 4px
+                                    padding: 8px 8px 8px 36px
+                                    width: 100%
+                                    &::placeholder
+                                        font-family: Inter
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 24px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #78797D
+
+
+                            
+                            .dropdown-menu2
+                                overflow-y: scroll
+                                max-height: 328px
+                            
+                                &::-webkit-scrollbar
+                                    width: 6px
+                                    height: 88px
+                                &::-webkit-scrollbar-track 
+                                    background: transparent
+                                &::-webkit-scrollbar-thumb
+                                    background: rgba(0, 0, 0, 0.16)
+                                    border-radius: 100px
+                                li
+                                    display: flex
+                                    align-items: center
+                                    cursor: pointer
+                                    &:not(:last-child)
+                                        margin-bottom: 8px
+                                    img
+                                        margin-right: 8px
+                                    p
+                                        font-family: Inter
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 20px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #1B1D22
+                                    .name_circle
+                                        margin-right: 8px
+                                        background: #EFCC89
+                                        border-radius: 100%
+                                        span
+                                            border: none
+                                            font-family: Inter, sans-serif
+                                            font-style: normal
+                                            font-weight: 600
+                                            font-size: 10px
+                                            line-height: 16px
+                                            text-align: center
+                                            text-transform: uppercase
+                                            color: rgba(0, 0, 0, 0.8)
+
+
+
+
+
+            &-manager
+                margin-right: 226px
+                h3
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+                    margin-bottom: 6px
+                .wrapper3
+                    display: flex
+                    .tag-area3
+                        display: flex
+                        max-width: 108px
+                        flex-wrap: wrap
+                        .tag3
+                            cursor: pointer
+                            position: relative
+                            margin-right: 4px
+                            &:hover
+                                .tag-title
+                                    opacity: 1
+                                    visibility: visible
+                                .tag_overlay
+                                    opacity: 1
+                                    visibility: visible
+                            .tag_overlay
+                                background: #D30D1E
+                                opacity: 0.7
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                width: 32px
+                                height: 32px
+                                border-radius: 100%
+                                position: absolute
+                                visibility: hidden
+                                opacity: 0
+                            .tag-title
+                                position: absolute
+                                top: -45px
+                                z-index: 99
+                                left: 50%
+                                transform: translateX(-50%)
+                                opacity: 0
+                                visibility: hidden
+                                padding: 6px 12px
+                                min-width: 108px
+                                min-height: 32px
+                                text-align: center
+                                min-width: 108px
+                                min-height: 32px
+                                background: white
+                                text-align: center
+                                border-radius: 4px
+                                box-shadow: 0px 6px 13px 1px #dedede
+                                &:after
+                                    content: url(../../img/down.svg)
+                                    position: absolute
+                                    bottom: -10px
+                                    left: 50%
+                                    transform: translateX(-50%)
+
+                                p
+                                    font-family: Inter, sans-serif
+                                    font-style: normal
+                                    font-weight: normal
+                                    font-size: 14px
+                                    line-height: 20px
+                                    font-feature-settings: 'cv10' on, 'cv05' on
+                                    color: #1B1D22
+                                    white-space: nowrap
+                                   
+                    .tag-plus
+                        margin-right: 4px
+                        position: relative
+                        cursor: pointer
+                        &:hover
+                            .tag-plus-hide
+                                opacity: 1
+                                visibility: visible
+                        .tag-plus-hide
+                            position: absolute
+                            z-index: 9
+                            background: transparent
+                            left: 50%
+                            transform: translateX(-50%)
+                            opacity: 0
+                            visibility: hidden
+                        .tag-plus-content
+                            padding: 12px 16px
+                            background: #FFFFFF
+                            box-shadow: 0px 1px 2px rgba(18, 18, 18, 0.1), 0px 8px 16px rgba(18, 18, 18, 0.16)
+                            border-radius: 8px
+                            min-width: 200px
+                            margin-top: 37px
+
+                            ul
+                                li
+                                    display: flex
+                                    align-items: center
+                                    &:not(:last-child)
+                                        margin-bottom: 8px
+                                    img
+                                        margin-right: 8px
+                                        display: block
+                                        position: relative
+                                    .ofline
+                                        position: relative
+                                        &:after
+                                            position: absolute
+                                            content: url(../../img/ofline2.svg)
+                                            right: 7px
+                                            bottom: -5px
+
+                                    p
+                                        font-family: Inter
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 20px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #1B1D22
+                                        white-space: nowrap
+                        span
+                            width: 32px
+                            height: 32px
+                            font-family: Inter, sans-serif
+                            font-style: normal
+                            font-weight: 600
+                            font-size: 10px
+                            line-height: 16px
+                            text-align: center
+                            text-transform: uppercase
+                            font-feature-settings: 'cv10' on, 'cv05' on
+                            color: #53565A
+                            background: #E0E0E0
+                            border-radius: 100%
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            cursor: pointer
+                    .dropdown3
+                        .add-tag3
+                            .span
+                                position: relative
+                                cursor: pointer
+                                span
+                                    width: 32px
+                                    height: 32px
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    border: 1px solid #D1D1D1
+                                    border-radius: 100%
+                                    cursor: pointer
+                                    position: relative
+                                    z-index: 10
+                                &:hover
+                                    span
+                                        border: 1px solid #E65F05
+                                    .menu-hide3
+                                        opacity: 1
+                                        visibility: visible
+                    .menu-hide3
+                        background: transparent
+                        position: absolute
+                        top: 0
+                        opacity: 0
+                        visibility: hidden
+                        max-width: 35px
+                        .menu-content
+                            background: #FFFFFF
+                            box-shadow: 0px 1px 2px rgba(18, 18, 18, 0.1), 0px 8px 16px rgba(18, 18, 18, 0.16)
+                            border-radius: 8px
+                            padding: 16px
+                            min-width: 320px
+                            margin-top: 35px
+
+                            form
+                                margin-bottom: 20px
+                                position: relative
+                                svg
+                                    position: absolute
+                                    top: 50%
+                                    transform: translateY(-50%)
+                                    left: 11px
+                                input
+                                    font-family: Inter
+                                    font-style: normal
+                                    font-weight: normal
+                                    font-size: 14px
+                                    line-height: 24px
+                                    font-feature-settings: 'cv10' on, 'cv05' on
+                                    color: #78797D
+                                    background: #FFFFFF
+                                    border: 2px solid #E0E0E0
+                                    box-sizing: border-box
+                                    border-radius: 4px
+                                    padding: 8px 8px 8px 36px
+                                    width: 100%
+                                    &::placeholder
+                                        font-family: Inter
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 24px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #78797D
+
+
+                            
+                            .dropdown-menu3
+                                overflow-y: scroll
+                                max-height: 328px
+                            
+                                &::-webkit-scrollbar
+                                    width: 6px
+                                    height: 88px
+                                &::-webkit-scrollbar-track 
+                                    background: transparent
+                                &::-webkit-scrollbar-thumb
+                                    background: rgba(0, 0, 0, 0.16)
+                                    border-radius: 100px
+                                .added3
+                                    h5
+                                        display: block
+                                li
+                                    display: flex
+                                    align-items: center
+                                    justify-content: space-between
+                                    &:not(:last-child)
+                                            margin-bottom: 8px
+                                    .li-content                 
+                                        display: flex
+                                        align-items: center
+                                        cursor: pointer
+                                        
+                                        img
+                                            margin-right: 8px
+                                        p
+                                            font-family: Inter
+                                            font-style: normal
+                                            font-weight: normal
+                                            font-size: 14px
+                                            line-height: 20px
+                                            font-feature-settings: 'cv10' on, 'cv05' on
+                                            color: #1B1D22
+                                    h5
+                                        display: none
+                                        font-family: Inter, sans-serif
+                                        font-style: normal
+                                        font-weight: 500
+                                        font-size: 11px
+                                        line-height: 16px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #D30D1E
+                                        flex: none
+                                        order: 2
+                                        flex-grow: 0
+                                        margin: 0px 8px
+                                        border: none
+                                        padding-right: 8px
+
+
+        &-item2
+            display: flex
+            &-client
+                margin-right: 16px
+                h3
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+                    margin-bottom: 4px
+                p
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                a
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+            &-arrow
+                margin-right: 16px
+                align-self: center
+            &-freelancer
+                margin-right: 41px
+                h3
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+                    margin-bottom: 4px
+                p
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                a
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+            &-message
+                display: flex
+                align-self: center
+                p
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 13px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                    display: block
+                    margin-right: 4px
+                svg
+                    margin-right: 9px
+                span
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 10px
+                    line-height: 12px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #FFFFFF
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 18px
+                    height: 18px
+                    background: #E65F05
+                    border-radius: 100px
+
+
+    .line
+        height: 1px
+        background-color:  #E0E0E0
+        width: 1248px
+        position: relative
+        left: -25px
+        margin-top: 16px
+        margin-bottom: 16px
+
+    .project-bottom
+        display: flex
+        align-items: center
+        &-left
+            margin-right: 88px
+            ul
+                display: flex
+                li
+                    &:not(:last-child)
+                        margin-right: 40px
+                    p
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 12px
+                        line-height: 16px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #78797D
+                        display: block
+                        margin-bottom: 4px
+                    span
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 20px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #1B1D22
+        &-right
+            ul
+                display: flex
+                li
+                    display: flex
+                    &:not(:last-child)
+                        margin-right: 26px
+                    a
+                        display: flex
+                    p
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 13px
+                        line-height: 16px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #1B1D22
+                    svg
+                        margin-right: 9px
+
+
+
+
+
+#notes
+    background: #FFFFFF
+    box-shadow: 0px 2px 4px rgba(18, 18, 18, 0.1), 0px 16px 32px rgba(18, 18, 18, 0.16)
+    border-radius: 8px
+    padding: 24px 24px 16px 24px
+    min-width: 612px
+    max-width: 612px
+    cursor: unset
+    overflow-x: hidden
+    .fancybox-close-small
+        border: 1px solid #E0E0E0
+        border-radius: 100%
+        right: 24px
+        top: 24px
+        outline: none
+        svg
+            path
+                fill: #B2B2B3
+
+    .line-2
+        background: #E0E0E0
+        height: 1px
+        width: 612px
+        margin: 16px 0px
+        right: 25px
+        position: relative
+    .line-3
+        background: #E0E0E0
+        height: 1px
+        width: 612px
+        margin-bottom: 16px
+        margin-top: 3px
+        right: 25px
+        position: relative
+    .notes-content
+        .notes-title
+            display: flex
+            flex-wrap: wrap 
+            h3
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                margin-bottom: 8px
+                width: 100%
+            
+            p
+                display: block
+                margin-right: 32px
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #78797D
+                span
+                    color: #1B1D22
+                    margin-left: 5px
+
+
+
+    ul
+        height: 292px
+        overflow-y: scroll
+        &::-webkit-scrollbar
+            width: 6px
+            height: 88px
+        &::-webkit-scrollbar-track 
+            background: transparent
+        &::-webkit-scrollbar-thumb
+            background: rgba(0, 0, 0, 0.16)
+            border-radius: 100px
+        li
+            &:not(:last-child)
+                margin-bottom: 16px
+            span
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 12px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #9D9E9F
+                display: block
+
+            p
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+    
+    form
+        position: relative
+        svg
+            right: 15px
+            top: 50%
+            transform: translateY(-50%)
+            cursor: pointer
+            position: absolute
+        input
+            background: #FFFFFF
+            border: 2px solid #E0E0E0
+            box-sizing: border-box
+            border-radius: 4px
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 24px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #78797D
+            padding: 8px 36px 8px 12px
+            width: 100%
+            &:placeholder
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 24px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #78797D
+
+
+#files
+    background: #FFFFFF
+    box-shadow: 0px 2px 4px rgba(18, 18, 18, 0.1), 0px 16px 32px rgba(18, 18, 18, 0.16)
+    border-radius: 8px
+    padding: 24px 24px 16px 24px
+    min-width: 612px
+    max-width: 612px
+    cursor: unset
+    overflow-x: hidden
+    min-height: 400px
+    .fancybox-close-small
+        border: 1px solid #E0E0E0
+        border-radius: 100%
+        right: 24px
+        top: 24px
+        outline: none
+        svg
+            path
+                fill: #B2B2B3
+
+    .line-2
+        background: #E0E0E0
+        height: 1px
+        width: 612px
+        margin: 16px 0px
+        right: 25px
+        position: relative
+    
+    .notes-content
+        .notes-title
+            display: flex
+            flex-wrap: wrap 
+            h3
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                margin-bottom: 8px
+                width: 100%
+            
+            p
+                display: block
+                margin-right: 32px
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #78797D
+                span
+                    color: #1B1D22
+                    margin-left: 5px
+
+    .files-content
+        ul
+            li
+                display: flex
+                align-items: center
+                max-width: 100%
+                cursor: pointer
+                position: relative
+                
+                &:not(:last-child)
+                    border-bottom: 1px solid #E0E0E0
+                    padding-bottom: 14px
+                    margin-bottom: 14px
+                img
+                    margin-right: 12px
+                    border-radius: 4px
+                svg
+                    position: absolute
+                    right: 0
+                .files-desc
+                    p
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 20px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #1B1D22
+                    span
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 11px
+                        line-height: 16px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #78797D

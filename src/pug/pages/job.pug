@@ -1,0 +1,266 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'ITHIRE';
+
+block links
+    - var link = 'job.css';
+
+block scripts
+    - var js = 'index.js';
+block header
+    include ../blocks/header.pug
+   
+    section.task
+        .container
+            .task-content
+                .task-content-left
+                    .task-content-left-title
+                        .title-mark
+                            h1 Some To-Do description
+                            .job-desc
+                                .tslt
+                                    p  Created:
+                                        span Arlene Cooper, 1/19/2021, 10:07 AM
+                                .tslt
+                                    p  Due date:
+                                        span 4/19/2021
+                        label.container-mark
+                            input.inp(type="checkbox")
+                            span.checkmark
+                            |Mark this done
+                            
+                    .line3
+                    .task-project
+                        .task-content-left-name
+                            .task-content-left-name-title
+                                ul
+                                    li
+                                        img(src="img/avatar40px.png", alt="")
+                                        .job-mail
+                                            p You
+                                            span.text_edit Who again except resultant ever toil there him: do born take, toil.
+                                            span Will praising denouncing desires anyone actual toil this example who is to it mistaken laborious.
+                                        .mail-time
+                                            #delete(style="display: none;")
+                                                .delete-blok
+                                                    p Delete message
+                                                    span Do you really want to delete the message?
+                                                    .delete-blok-btn
+                                                        button.confirm Confirm
+                                                        button.cancel Cancel
+                                            .mail-time-item
+                                                span 11:29 AM
+                                                .edit-blok
+                                                    .edit
+                                                        p Edit
+                                                        a.del(href="#delete").fancybox Delete
+                                                svg(xmlns="http://www.w3.org/2000/svg" width="4" height="16" viewBox="0 0 4 16" fill="none")
+                                                    path(d="M2 0.5C1.3125 0.5 0.75 1.0625 0.75 1.75C0.75 2.4375 1.3125 3 2 3C2.6875 3 3.25 2.4375 3.25 1.75C3.25 1.0625 2.6875 0.5 2 0.5ZM2 13C1.3125 13 0.75 13.5625 0.75 14.25C0.75 14.9375 1.3125 15.5 2 15.5C2.6875 15.5 3.25 14.9375 3.25 14.25C3.25 13.5625 2.6875 13 2 13ZM2 6.75C1.3125 6.75 0.75 7.3125 0.75 8C0.75 8.6875 1.3125 9.25 2 9.25C2.6875 9.25 3.25 8.6875 3.25 8C3.25 7.3125 2.6875 6.75 2 6.75Z" fill="#9D9E9F")
+                                            .mail-time-item
+                                                span 11:29 AM
+                                                .edit-blok
+                                                    .edit
+                                                        p Edit
+                                                        a.del(href="#delete").fancybox Delete
+                                                svg(xmlns="http://www.w3.org/2000/svg" width="4" height="16" viewBox="0 0 4 16" fill="none")
+                                                    path(d="M2 0.5C1.3125 0.5 0.75 1.0625 0.75 1.75C0.75 2.4375 1.3125 3 2 3C2.6875 3 3.25 2.4375 3.25 1.75C3.25 1.0625 2.6875 0.5 2 0.5ZM2 13C1.3125 13 0.75 13.5625 0.75 14.25C0.75 14.9375 1.3125 15.5 2 15.5C2.6875 15.5 3.25 14.9375 3.25 14.25C3.25 13.5625 2.6875 13 2 13ZM2 6.75C1.3125 6.75 0.75 7.3125 0.75 8C0.75 8.6875 1.3125 9.25 2 9.25C2.6875 9.25 3.25 8.6875 3.25 8C3.25 7.3125 2.6875 6.75 2 6.75Z" fill="#9D9E9F")
+                                    li
+                                        img(src="img/avatar2_40px.png", alt="")
+                                        .job-mail
+                                            p Sergio
+                                            span Procure teachings extremely master consequences fault
+                                            
+                                        .mail-time
+                                            .mail-time-item
+                                                span.reply 11:29 AM
+                                                
+                                                svg.reply-icon(xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none")
+                                                    path(d="M9.16683 13.6666L0.833496 6.99992L9.16683 0.333252V4.49992C13.7693 4.49992 17.5002 8.23075 17.5002 12.8333C17.5002 13.0608 17.4918 13.2858 17.4735 13.5083C16.2543 11.1966 13.8652 9.59908 11.0943 9.50408L10.8335 9.49992H9.16683V13.6666ZM7.50016 7.83325H10.8618L11.151 7.83908C12.2218 7.87492 13.2543 8.09742 14.2143 8.47742C12.9918 7.06242 11.1835 6.16658 9.16683 6.16658H7.50016V3.80075L3.50183 6.99992L7.50016 10.1991V7.83325Z" fill="#9D9E9F")
+                                    li
+                                        img(src="img/avatar40px.png", alt="")
+                                        .job-mail
+                                            p You
+                                            span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque proin tempus orci aliquam.
+                                            
+                                        .mail-time
+                                            .mail-time-item
+                                                span 01:14 PM
+                                                .edit-blok
+                                                    .edit
+                                                        p Edit
+                                                        a.del(href="#delete").fancybox Delete
+                                                svg(xmlns="http://www.w3.org/2000/svg" width="4" height="16" viewBox="0 0 4 16" fill="none")
+                                                        path(d="M2 0.5C1.3125 0.5 0.75 1.0625 0.75 1.75C0.75 2.4375 1.3125 3 2 3C2.6875 3 3.25 2.4375 3.25 1.75C3.25 1.0625 2.6875 0.5 2 0.5ZM2 13C1.3125 13 0.75 13.5625 0.75 14.25C0.75 14.9375 1.3125 15.5 2 15.5C2.6875 15.5 3.25 14.9375 3.25 14.25C3.25 13.5625 2.6875 13 2 13ZM2 6.75C1.3125 6.75 0.75 7.3125 0.75 8C0.75 8.6875 1.3125 9.25 2 9.25C2.6875 9.25 3.25 8.6875 3.25 8C3.25 7.3125 2.6875 6.75 2 6.75Z" fill="#9D9E9F")
+                                    li
+                                        img(src="img/avatar2_40px.png", alt="")
+                                        .job-mail
+                                            p Sergio
+                                            span Okay, I'll send you some files
+                                            .job-mail-content
+                                                .job-mail-content-item
+                                                    img(src="img/pdf.svg", alt="")
+                                                    p Messenger-for-Product-management-app-guidelines.pdf 
+                                                    span • 14.3 MB
+                                                    svg(xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none")
+                                                        path(d="M7.66683 4.66667H11.0002L7.00016 8.66667L3.00016 4.66667H6.3335V0H7.66683V4.66667ZM1.66683 10.6667H12.3335V6H13.6668V11.3333C13.6668 11.5101 13.5966 11.6797 13.4716 11.8047C13.3465 11.9298 13.177 12 13.0002 12H1.00016C0.823352 12 0.653782 11.9298 0.528758 11.8047C0.403734 11.6797 0.333496 11.5101 0.333496 11.3333V6H1.66683V10.6667Z" fill="#B2B3B3")
+                                                .job-mail-content-item
+                                                    img(src="img/doc.svg", alt="")
+                                                    p document_filename0398218.docx
+                                                    span • 2.74 MB
+                                                    svg(xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none")
+                                                        path(d="M7.66683 4.66667H11.0002L7.00016 8.66667L3.00016 4.66667H6.3335V0H7.66683V4.66667ZM1.66683 10.6667H12.3335V6H13.6668V11.3333C13.6668 11.5101 13.5966 11.6797 13.4716 11.8047C13.3465 11.9298 13.177 12 13.0002 12H1.00016C0.823352 12 0.653782 11.9298 0.528758 11.8047C0.403734 11.6797 0.333496 11.5101 0.333496 11.3333V6H1.66683V10.6667Z" fill="#B2B3B3")
+                            
+
+                                                
+                                                            
+                                        .mail-time.aic
+                                            .mail-time-item
+                                                span.reply 11:29 AM
+                                                
+                                                svg.reply-icon(xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none")
+                                                    path(d="M9.16683 13.6666L0.833496 6.99992L9.16683 0.333252V4.49992C13.7693 4.49992 17.5002 8.23075 17.5002 12.8333C17.5002 13.0608 17.4918 13.2858 17.4735 13.5083C16.2543 11.1966 13.8652 9.59908 11.0943 9.50408L10.8335 9.49992H9.16683V13.6666ZM7.50016 7.83325H10.8618L11.151 7.83908C12.2218 7.87492 13.2543 8.09742 14.2143 8.47742C12.9918 7.06242 11.1835 6.16658 9.16683 6.16658H7.50016V3.80075L3.50183 6.99992L7.50016 10.1991V7.83325Z" fill="#9D9E9F")
+                                                    
+                                            
+                                    li
+                                        img(src="img/avatar2_40px.png", alt="")
+                                        .job-mail
+                                            p Sergio
+                                            span Varius vitae elit tempus sed morbi mauris viverra. Duis in magna vel odio habitant suspendisse aliquet lectus non.
+                                            .job-mail-content-reply
+                                                p David
+                                                    span 11:55 AM
+                                                span Varius vitae elit tempus sed morbi mauris viverra. Duis in magna vel odio habitant suspendisse aliquet lectus non.
+                                .textarea-content
+                                    .textarea-content-reply
+                                        p Sergio
+                                            span 11:55 AM
+                                        p.reply-text Varius vitae elit tempus sed morbi mauris viverra.
+                                    textarea(value= placeholder="Type a message")#textarea
+                                    .text-area-bottom
+                                        .text-area-bottom-icon
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none")
+                                                path(d="M9.00008 17.3334C4.39758 17.3334 0.666748 13.6026 0.666748 9.00008C0.666748 4.39758 4.39758 0.666748 9.00008 0.666748C13.6026 0.666748 17.3334 4.39758 17.3334 9.00008C17.3334 13.6026 13.6026 17.3334 9.00008 17.3334ZM9.00008 15.6667C10.7682 15.6667 12.4639 14.9644 13.7141 13.7141C14.9644 12.4639 15.6667 10.7682 15.6667 9.00008C15.6667 7.23197 14.9644 5.53628 13.7141 4.28604C12.4639 3.03579 10.7682 2.33341 9.00008 2.33341C7.23197 2.33341 5.53628 3.03579 4.28604 4.28604C3.03579 5.53628 2.33341 7.23197 2.33341 9.00008C2.33341 10.7682 3.03579 12.4639 4.28604 13.7141C5.53628 14.9644 7.23197 15.6667 9.00008 15.6667ZM5.66675 9.83342H12.3334C12.3334 10.7175 11.9822 11.5653 11.3571 12.1904C10.732 12.8156 9.88414 13.1667 9.00008 13.1667C8.11603 13.1667 7.26818 12.8156 6.64306 12.1904C6.01794 11.5653 5.66675 10.7175 5.66675 9.83342ZM5.66675 8.16675C5.33523 8.16675 5.01728 8.03505 4.78286 7.80063C4.54844 7.56621 4.41675 7.24827 4.41675 6.91675C4.41675 6.58523 4.54844 6.26729 4.78286 6.03286C5.01728 5.79844 5.33523 5.66675 5.66675 5.66675C5.99827 5.66675 6.31621 5.79844 6.55063 6.03286C6.78505 6.26729 6.91675 6.58523 6.91675 6.91675C6.91675 7.24827 6.78505 7.56621 6.55063 7.80063C6.31621 8.03505 5.99827 8.16675 5.66675 8.16675ZM12.3334 8.16675C12.0019 8.16675 11.684 8.03505 11.4495 7.80063C11.2151 7.56621 11.0834 7.24827 11.0834 6.91675C11.0834 6.58523 11.2151 6.26729 11.4495 6.03286C11.684 5.79844 12.0019 5.66675 12.3334 5.66675C12.6649 5.66675 12.9829 5.79844 13.2173 6.03286C13.4517 6.26729 13.5834 6.58523 13.5834 6.91675C13.5834 7.24827 13.4517 7.56621 13.2173 7.80063C12.9829 8.03505 12.6649 8.16675 12.3334 8.16675Z" fill="#9D9E9F")
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none")
+                                                path(d="M8.66658 10.2501V5.66675C8.66658 4.78269 8.3154 3.93485 7.69027 3.30973C7.06515 2.6846 6.21731 2.33341 5.33325 2.33341C4.4492 2.33341 3.60135 2.6846 2.97623 3.30973C2.35111 3.93485 1.99992 4.78269 1.99992 5.66675V10.2501C1.99992 11.6867 2.5706 13.0644 3.58642 14.0802C4.60225 15.0961 5.98 15.6667 7.41658 15.6667C8.85317 15.6667 10.2309 15.0961 11.2467 14.0802C12.2626 13.0644 12.8333 11.6867 12.8333 10.2501V2.33341H14.4999V10.2501C14.4999 12.1287 13.7536 13.9304 12.4253 15.2588C11.0969 16.5871 9.2952 17.3334 7.41658 17.3334C5.53797 17.3334 3.73629 16.5871 2.40791 15.2588C1.07953 13.9304 0.333252 12.1287 0.333252 10.2501V5.66675C0.333252 4.34067 0.860036 3.0689 1.79772 2.13121C2.7354 1.19353 4.00717 0.666748 5.33325 0.666748C6.65933 0.666748 7.9311 1.19353 8.86879 2.13121C9.80647 3.0689 10.3333 4.34067 10.3333 5.66675V10.2501C10.3333 11.0236 10.026 11.7655 9.47898 12.3125C8.932 12.8595 8.19013 13.1667 7.41658 13.1667C6.64304 13.1667 5.90117 12.8595 5.35419 12.3125C4.80721 11.7655 4.49992 11.0236 4.49992 10.2501V5.66675H6.16658V10.2501C6.16658 10.5816 6.29828 10.8995 6.5327 11.134C6.76712 11.3684 7.08506 11.5001 7.41658 11.5001C7.74811 11.5001 8.06605 11.3684 8.30047 11.134C8.53489 10.8995 8.66658 10.5816 8.66658 10.2501Z" fill="#9D9E9F")
+                                        .text-area-bottom-send
+                                            p Send
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none")
+                                                path(d="M1.1175 0.173422L16.5025 8.63509C16.5678 8.67106 16.6223 8.7239 16.6602 8.7881C16.6982 8.8523 16.7182 8.92551 16.7182 9.00009C16.7182 9.07466 16.6982 9.14787 16.6602 9.21208C16.6223 9.27628 16.5678 9.32912 16.5025 9.36509L1.1175 17.8268C1.05406 17.8617 0.982623 17.8794 0.910228 17.8783C0.837832 17.8772 0.766977 17.8572 0.704647 17.8204C0.642317 17.7835 0.590664 17.7311 0.554778 17.6682C0.518892 17.6053 0.500012 17.5342 0.5 17.4618V0.538422C0.500012 0.466017 0.518892 0.394866 0.554778 0.33198C0.590664 0.269094 0.642317 0.216645 0.704647 0.179802C0.766977 0.14296 0.837832 0.122995 0.910228 0.121876C0.982623 0.120757 1.05406 0.138523 1.1175 0.173422ZM2.16667 9.83342V15.3476L13.7083 9.00009L2.16667 2.65259V8.16676H6.33333V9.83342H2.16667Z" fill="#9D9E9F")
+                .task-content-right
+                    .task-content-right-title
+                        h3 Tasks
+                        .progress
+                            p 4 of 13 completed
+                            progress(value="4" max="12")
+                        
+                    .right-line
+                    .project-member
+                        .task-content-left-name-title-add-to-do
+                            .to-do-content
+                                .tclntu
+                                    h3 Task list name
+                                    p 1/4 competed
+                                ul
+                                    li
+                                        .li-task
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none")
+                                                rect(y="6" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="9" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="12" width="12" height="1" fill="#C7C7C7")
+                                            label.container 
+                                                input.inp(type="checkbox" )
+                                                span.checkmark
+                                               
+                                        p Invite freelancer for a project or create project
+                                        span.num 7
+                                    li
+                                        .li-task
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none")
+                                                rect(y="6" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="9" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="12" width="12" height="1" fill="#C7C7C7")
+                                            label.container 
+                                                input.inp(type="checkbox" )
+                                                span.checkmark
+
+                                        p Some To-Do description
+                                        span.num 7
+                                    li
+                                        .li-task
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none")
+                                                rect(y="6" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="9" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="12" width="12" height="1" fill="#C7C7C7")
+                                            label.container 
+                                                input.inp(type="checkbox" )
+                                                span.checkmark
+                                               
+                                        p Some To-Do description
+                                        span.num 7
+                                    li
+                                        .li-task
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none")
+                                                rect(y="6" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="9" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="12" width="12" height="1" fill="#C7C7C7")
+                                            label.container 
+                                                input.inp(type="checkbox" )
+                                                span.checkmark
+                                               
+                                        p Some To-Do description
+                                        span.num 7
+                            .to-do-content
+                                .tclntu
+                                    h3 Task list name
+                                    p 1/4 competed
+                                ul
+                                    li
+                                        .li-task
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none")
+                                                rect(y="6" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="9" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="12" width="12" height="1" fill="#C7C7C7")
+                                            label.container 
+                                                input.inp(type="checkbox" )
+                                                span.checkmark
+                                               
+                                        p Some To-Do description
+                                        span.num 7
+                                    li
+                                        .li-task
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none")
+                                                rect(y="6" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="9" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="12" width="12" height="1" fill="#C7C7C7")
+                                            label.container 
+                                                input.inp(type="checkbox" )
+                                                span.checkmark
+                                               
+                                        p Some To-Do description
+                                        span.num 7
+                                    li
+                                        .li-task
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none")
+                                                rect(y="6" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="9" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="12" width="12" height="1" fill="#C7C7C7")
+                                            label.container 
+                                                input.inp(type="checkbox" )
+                                                span.checkmark
+                                               
+                                        p Some To-Do description
+                                        span.num 7
+                                    li
+                                        .li-task
+                                            svg(xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none")
+                                                rect(y="6" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="9" width="12" height="1" fill="#C7C7C7")
+                                                rect(y="12" width="12" height="1" fill="#C7C7C7")
+                                            label.container 
+                                                input.inp(type="checkbox" )
+                                                span.checkmark
+                                        p Some To-Do description
+                                        span.num 7
+                                            
+block content

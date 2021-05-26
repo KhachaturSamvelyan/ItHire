@@ -1,0 +1,1147 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header"
+@import "../blocks/footer"
+
+
+
+.select-content-inp
+    max-width: 140px
+    min-height: 40px
+    position: relative
+    background: #FFFFFF
+    border: 2px solid #E0E0E0
+    box-sizing: border-box
+    border-radius: 4px
+    max-height: 40px
+    display: flex
+    svg
+        position: absolute
+        right: 12px
+        top: 50%
+        transform: translateY(-50%)
+    input
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 24px
+        font-feature-settings: 'cv10' on, 'cv05' on
+        color: #1B1D22
+        padding: 6px 12px
+        width: 100%
+        outline: none
+        border: none
+        &:placeholder
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 24px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #1B1D22
+
+.select-content
+    .custom-select
+        position: relative
+        select
+            display: none
+    .select-selected
+        background: #FFFFFF
+        border: 2px solid #E0E0E0
+        box-sizing: border-box
+        border-radius: 4px
+        padding: 8px 12px
+        min-width: 220px
+        display: flex
+        align-items: center
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 24px
+        font-feature-settings: 'cv10' on, 'cv05' on
+        color: #78797D
+        &:after
+            content: url('../../img/arr.svg')
+            position: absolute
+            right: 16px
+    .select-selected.select-arrow-active
+        &::after
+            transform: rotate(180deg)
+    .select-items div,.select-selected
+        color: #ffffff
+        padding: 8px 12px
+        background: #FFFFFF
+        border: 2px solid #E0E0E0
+        box-sizing: border-box
+        border-radius: 4px
+        cursor: pointer
+        user-select: none
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 24px
+        font-feature-settings: 'cv10' on, 'cv05' on
+        color: #78797D
+        max-height: 40px
+    
+    .select-items 
+        position: absolute
+        background-color: white
+        top: 100%
+        left: 0
+        right: 0
+        z-index: 99
+        div
+            margin-bottom: 1px
+            margin-top: 1px
+            display: flex
+            align-items: center
+    .select-hide
+        display: none
+
+
+    .select-items div:hover, .same-as-selected 
+        background-color: rgba(0, 0, 0, 0.1)
+.task-content
+    margin-top: 32px
+    background: #FFFFFF
+    box-shadow: 0px 0.1px 0.3px rgba(18, 18, 18, 0.1), 0px 1px 2px rgba(18, 18, 18, 0.16)
+    border-radius: 8px
+    display: flex
+    min-height: 784px
+    margin-bottom: 32px
+    &-left
+        border-right: 1px solid #E0E0E0
+        padding: 24px
+        min-width: 848px
+        .task-content-left-list2
+          display: none
+          form
+            display: flex
+            align-items: center
+
+            .task-content-left-list-input
+              display: flex
+              flex-direction: column
+              margin-right: 8px
+              label
+                font-family: Inter,sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+              input
+                min-width: 488px
+                background: #FFFFFF
+                border: 2px solid #E0E0E0
+                box-sizing: border-box
+                border-radius: 4px
+                padding: 8px 12px
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 24px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                margin-top: 8px
+                max-height: 40px
+
+          
+
+            .task-content-left-list-select
+              display: flex
+              flex-direction: column
+              margin-right: 19px
+              .lb
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                margin-bottom: 8px
+            .task-content-left-list-svg
+              margin-top: 20px
+              display: flex
+              svg
+                margin-right: 29px
+                cursor: pointer
+        .task-project
+            .task-line
+                width: 848px
+                height: 1px
+                background: #E0E0E0
+                position: relative
+                margin-bottom: 24px
+                margin-top: 30px
+                left: -24px
+        &-title
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 24px
+            .progress
+                display: flex
+                align-items: center
+                margin-right: 24px
+                p
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                    display: block
+                    margin-right: 8px
+                progress
+                    min-width: 200px
+                    display: block
+                    display: block
+                    background: transparent
+                    height: 6px
+                    border-radius: 100px
+                    &::-webkit-progress-value
+                        background: #52248F
+                        border-radius: 100px
+
+                    &::-webkit-progress-bar
+                        background: #E0E0E0
+                        border-radius: 100px
+            h1
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 28px
+                line-height: 32px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                min-width: 342px
+                margin-right: 24px
+                span
+                    color: #9D9E9F
+            button
+              background: #E65F05
+              border-radius: 4px
+              border: none
+              padding: 6px 12px
+              font-family: Inter,sans-serif
+              font-style: normal
+              font-weight: 500
+              font-size: 14px
+              line-height: 20px
+              font-feature-settings: 'cv10' on, 'cv05' on
+              color: #FFFFFF
+              cursor: pointer
+              white-space: nowrap
+              svg
+                margin-right: 8px
+
+
+        .line3
+            width: 848px
+            height: 1px
+            background: #E0E0E0
+            position: relative
+            margin-top: 25px
+            margin-bottom: 23px
+            left: -25px
+        &-name
+            display: flex
+            justify-content: space-between
+            &-title
+                .tclnt
+                    display: flex
+                    align-items: center
+                    margin-bottom: 10px
+                    h3
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 20px
+                        line-height: 24px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #1B1D22
+                        margin-right: 8px
+                    p
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 11px
+                        line-height: 16px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #53565A
+                        padding: 2px 6px
+                        background: #EBEBEB
+                        border-radius: 4px
+                        max-height: 20px
+
+                &-p
+                    display: flex
+                    margin-bottom: 18px
+                    p
+                        display: block
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 13px
+                        line-height: 16px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #78797D
+                        span
+                            margin-left: 5px
+                            color: #1B1D22 
+                        
+                        &:first-child
+                            margin-right: 132px
+                
+            &-icon
+                svg
+                    cursor: pointer
+                    &:first-child
+                        margin-right: 28px
+
+
+
+
+
+    &-right
+      padding: 24px
+      h3
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        font-feature-settings: 'cv10' on, 'cv05' on
+        color: #1B1D22
+        margin-bottom: 24px
+      ul
+        margin-bottom: 32px
+        .work-li
+          align-items: center
+        li
+          display: flex
+          &:not(:last-child)
+            margin-bottom: 16px
+          p
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 13px
+            line-height: 16px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #78797D
+            display: block
+            min-width: 120px
+            margin-right: 8px
+          span
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 13px
+            line-height: 16px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #1B1D22
+          .colors
+            display: flex
+            .label_title
+              cursor: pointer
+              position: relative
+              &:hover
+               .tag-title
+                 opacity: 1
+                 visibility: visible
+              .tag-title
+                position: absolute
+                top: -45px
+                z-index: 99
+                left: 50%
+                transform: translateX(-50%)
+                opacity: 0
+                visibility: hidden
+                padding: 6px 12px
+                min-width: 83px
+                min-height: 32px
+                text-align: center
+                min-width: 108px
+                min-height: 32px
+                background: white
+                text-align: center
+                border-radius: 4px
+                box-shadow: 0px 6px 13px 1px #dedede
+                &:after
+                 content: url(../../img/down.svg)
+                 position: absolute
+                 bottom: -10px
+                 left: 50%
+                 transform: translateX(-50%)
+
+                p
+                 font-family: Inter, sans-serif
+                 font-style: normal
+                 font-weight: normal
+                 font-size: 14px
+                 line-height: 20px
+                 font-feature-settings: 'cv10' on, 'cv05' on
+                 color: #1B1D22
+                 white-space: nowrap
+                 min-width: 83px
+              &:not(:last-child)
+                margin-right: 8px
+          .time-now
+            margin-left: 8px
+            background: #E5F6E8
+            border-radius: 4px
+            padding: 4px 6px
+            display: flex
+            svg
+              margin-right: 6px
+            p
+              font-family: Inter, sans-serif
+              font-style: normal
+              font-weight: 500
+              font-size: 11px
+              line-height: 16px
+              font-feature-settings: 'cv10' on, 'cv05' on
+              color: #2B973D
+              min-width: unset
+      .project-member
+        display: flex
+        align-items: flex-start
+
+        &-item
+            display: flex
+            flex-direction: column
+            &-team
+                margin-bottom: 24px
+                h3
+                  font-family: Inter, sans-serif
+                  font-style: normal
+                  font-weight: 500
+                  font-size: 13px
+                  line-height: 16px
+                  font-feature-settings: 'cv10' on, 'cv05' on
+                  color: #1B1D22
+                  margin-bottom: 12px
+                .wrapper2
+                    display: flex
+                    .tag-area2
+                        display: flex
+                        flex-wrap: wrap
+                        .tag2
+                            cursor: pointer
+                            position: relative
+                            margin-right: 8px
+                            &:hover
+                                .tag-title
+                                    opacity: 1
+                                    visibility: visible
+                            .tag-title
+                                position: absolute
+                                top: -45px
+                                z-index: 99
+                                left: 50%
+                                transform: translateX(-50%)
+                                opacity: 0
+                                visibility: hidden
+                                padding: 6px 12px
+                                min-width: 108px
+                                min-height: 32px
+                                text-align: center
+                                min-width: 108px
+                                min-height: 32px
+                                background: white
+                                text-align: center
+                                border-radius: 4px
+                                box-shadow: 0px 6px 13px 1px #dedede
+                                &:after
+                                    content: url(../../img/down.svg)
+                                    position: absolute
+                                    bottom: -10px
+                                    left: 50%
+                                    transform: translateX(-50%)
+
+                                p
+                                    font-family: Inter, sans-serif
+                                    font-style: normal
+                                    font-weight: normal
+                                    font-size: 14px
+                                    line-height: 20px
+                                    font-feature-settings: 'cv10' on, 'cv05' on
+                                    color: #1B1D22
+                                    white-space: nowrap
+                            &:after
+                                content: url("../../img/ofline.svg")
+                                position: absolute
+                                bottom: 0
+                                right: 0
+                            &:first-child
+                                &:after
+                                    content: url("../../img/online.svg")
+                            
+                                
+                    
+                    .dropdown2
+                        .add-tag2
+                            .span
+                                position: relative
+                                cursor: pointer
+                                span
+                                    width: 32px
+                                    height: 32px
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    border: 1px solid #D1D1D1
+                                    border-radius: 100%
+                                    cursor: pointer
+                                    position: relative
+                                    z-index: 10
+                                    
+                                        
+                                &:hover
+                                    span
+                                        border: 1px solid #E65F05
+
+                                    .menu-hide2
+                                        opacity: 1
+                                        visibility: visible
+                    .menu-hide2
+                        background: transparent
+                        position: absolute
+                        top: 0
+                        opacity: 0
+                        visibility: hidden
+                        z-index: 9
+                        max-width: 35px
+
+                        .menu-content
+                            background: #FFFFFF
+                            box-shadow: 0px 1px 2px rgba(18, 18, 18, 0.1), 0px 8px 16px rgba(18, 18, 18, 0.16)
+                            border-radius: 8px
+                            padding: 16px
+                            min-width: 320px
+                            margin-top: 35px
+                            position: relative
+                            left: -278px
+                            form
+                                margin-bottom: 20px
+                                position: relative
+                                svg
+                                    position: absolute
+                                    top: 50%
+                                    transform: translateY(-50%)
+                                    left: 11px
+                                input
+                                    font-family: Inter
+                                    font-style: normal
+                                    font-weight: normal
+                                    font-size: 14px
+                                    line-height: 24px
+                                    font-feature-settings: 'cv10' on, 'cv05' on
+                                    color: #78797D
+                                    background: #FFFFFF
+                                    border: 2px solid #E0E0E0
+                                    box-sizing: border-box
+                                    border-radius: 4px
+                                    padding: 8px 8px 8px 36px
+                                    width: 100%
+                                    &::placeholder
+                                        font-family: Inter
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 24px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #78797D
+
+
+                            
+                            .dropdown-menu2
+                                overflow-y: scroll
+                                max-height: 328px
+                            
+                                &::-webkit-scrollbar
+                                    width: 6px
+                                    height: 88px
+                                &::-webkit-scrollbar-track 
+                                    background: transparent
+                                &::-webkit-scrollbar-thumb
+                                    background: rgba(0, 0, 0, 0.16)
+                                    border-radius: 100px
+                                li
+                                    display: flex
+                                    align-items: center
+                                    cursor: pointer
+                                    &:not(:last-child)
+                                        margin-bottom: 8px
+                                    img
+                                        margin-right: 8px
+                                    p
+                                        font-family: Inter
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 20px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #1B1D22
+
+
+
+
+            &-manager
+                h3
+                  font-family: Inter, sas-serif
+                  font-style: normal
+                  font-weight: 500
+                  font-size: 13px
+                  line-height: 16px
+                  font-feature-settings: 'cv10' on, 'cv05' on
+                  color: #1B1D22
+                  margin-bottom: 12px
+                .wrapper3
+                    display: flex
+                    .tag-area3
+                        display: flex
+                        flex-wrap: wrap
+
+                        .tag3
+                            cursor: pointer
+                            position: relative
+                            margin-right: 3px
+                            &:hover
+                                .tag-title
+                                    opacity: 1
+                                    visibility: visible
+                                .tag_overlay
+                                    opacity: 1
+                                    visibility: visible
+                            .tag_overlay
+                                background: #D30D1E
+                                opacity: 0.7
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                width: 32px
+                                height: 32px
+                                border-radius: 100%
+                                position: absolute
+                                visibility: hidden
+                                opacity: 0
+                            .tag-title
+                                position: absolute
+                                top: -45px
+                                z-index: 99
+                                left: 50%
+                                transform: translateX(-50%)
+                                opacity: 0
+                                visibility: hidden
+                                padding: 6px 12px
+                                min-width: 108px
+                                min-height: 32px
+                                text-align: center
+                                min-width: 108px
+                                min-height: 32px
+                                background: white
+                                text-align: center
+                                border-radius: 4px
+                                box-shadow: 0px 6px 13px 1px #dedede
+                                &:after
+                                    content: url(../../img/down.svg)
+                                    position: absolute
+                                    bottom: -10px
+                                    left: 50%
+                                    transform: translateX(-50%)
+
+                                p
+                                    font-family: Inter, sans-serif
+                                    font-style: normal
+                                    font-weight: normal
+                                    font-size: 14px
+                                    line-height: 20px
+                                    font-feature-settings: 'cv10' on, 'cv05' on
+                                    color: #1B1D22
+                                    white-space: nowrap
+                                   
+                    
+                    .dropdown3
+                        .add-tag3
+                            .span
+                                position: relative
+                                cursor: pointer
+                                span
+                                    width: 32px
+                                    height: 32px
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    border: 1px solid #D1D1D1
+                                    border-radius: 100%
+                                    cursor: pointer
+                                    position: relative
+                                    z-index: 10
+                                &:hover
+                                    span
+                                        border: 1px solid #E65F05
+                                    .menu-hide3
+                                        opacity: 1
+                                        visibility: visible
+                    .menu-hide3
+                        background: transparent
+                        position: absolute
+                        top: 0
+                        opacity: 0
+                        visibility: hidden
+                        max-width: 35px
+                        .menu-content
+                            background: #FFFFFF
+                            box-shadow: 0px 1px 2px rgba(18, 18, 18, 0.1), 0px 8px 16px rgba(18, 18, 18, 0.16)
+                            border-radius: 8px
+                            padding: 16px
+                            min-width: 320px
+                            margin-top: 35px
+                            position: relative
+                            left: -278px
+                            form
+                                margin-bottom: 20px
+                                position: relative
+                                svg
+                                    position: absolute
+                                    top: 50%
+                                    transform: translateY(-50%)
+                                    left: 11px
+                                input
+                                    font-family: Inter
+                                    font-style: normal
+                                    font-weight: normal
+                                    font-size: 14px
+                                    line-height: 24px
+                                    font-feature-settings: 'cv10' on, 'cv05' on
+                                    color: #78797D
+                                    background: #FFFFFF
+                                    border: 2px solid #E0E0E0
+                                    box-sizing: border-box
+                                    border-radius: 4px
+                                    padding: 8px 8px 8px 36px
+                                    width: 100%
+                                    &::placeholder
+                                        font-family: Inter
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 24px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #78797D
+
+
+                            
+                            .dropdown-menu3
+                                overflow-y: scroll
+                                max-height: 328px
+                            
+                                &::-webkit-scrollbar
+                                    width: 6px
+                                    height: 88px
+                                &::-webkit-scrollbar-track 
+                                    background: transparent
+                                &::-webkit-scrollbar-thumb
+                                    background: rgba(0, 0, 0, 0.16)
+                                    border-radius: 100px
+                                li
+                                    display: flex
+                                    align-items: center
+                                    cursor: pointer
+                                    &:not(:last-child)
+                                        margin-bottom: 8px
+                                    img
+                                        margin-right: 8px
+                                    p
+                                        font-family: Inter
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 20px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #1B1D22
+
+
+        &-item2
+            display: flex
+            &-client
+                margin-right: 16px
+                h3
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+                    margin-bottom: 4px
+                p
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                a
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+            &-arrow
+                margin-right: 16px
+                align-self: center
+            &-freelancer
+                margin-right: 41px
+                h3
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+                    margin-bottom: 4px
+                p
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                a
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+            &-message
+                display: flex
+                align-self: center
+                p
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 13px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                    display: block
+                    margin-right: 4px
+                svg
+                    margin-right: 9px
+                span
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 10px
+                    line-height: 12px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #FFFFFF
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 18px
+                    height: 18px
+                    background: #E65F05
+                    border-radius: 100px
+
+
+.task-content-left-name-title-add-to-do
+    .to-do-content
+        margin-bottom: 20px
+        ul
+            li
+                display: flex
+                align-items: center
+                .task-li-date
+                    display: flex
+                    margin-left: auto
+                    p
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 20px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #1B1D22
+                        margin-right: 4px
+                    span 
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 20px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #1B1D22
+                .li-task
+                    display: flex
+                .num
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 10px
+                    line-height: 12px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #dfdede
+                    padding: 3px 6px
+                    margin-left: 8px
+                    background: #E65F05
+                    border-radius: 100px
+                p
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 20px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                &:not(:last-child)
+                    margin-bottom: 12px
+                svg
+                    margin-right: 8px
+                    min-width: 12px
+                
+                .container
+                    position: relative
+                   
+                    cursor: pointer
+                    user-select: none
+                    padding-left: 28px
+                   
+                    &:hover
+                        color: #E65F05
+                    input
+                        position: absolute
+                        opacity: 0
+                        cursor: pointer
+                        height: 0
+                        width: 0
+                        &:checked
+                            ~ .checkmark
+                                background-color: #2B973D
+                                border: none
+                                &:after
+                                    display: block
+                   
+                    .checkmark
+                        position: absolute
+                        top: 0
+                        left: 0
+                        height: 20px
+                        width: 20px
+                        background: #FFFFFF
+                        border: 1px solid #C7C7C7
+                        box-sizing: border-box
+                        border-radius: 100px
+
+                        &:after
+                            content: url('../../img/check.svg')
+                            position: absolute
+                            display: none
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                            top: 43%
+                .gray
+                    color: #78797D
+    .add-to
+        display: flex
+        align-items: center
+        cursor: pointer
+        svg
+            margin-right: 12px
+        p
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #78797D
+    .task-content-left-list
+        display: none
+        form
+            display: flex
+            align-items: center
+
+            .task-content-left-list-input
+                display: flex
+                flex-direction: column
+                margin-right: 19px
+                label
+                    font-family: Inter,sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 13px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                input
+                    min-width: 716px
+                    background: #FFFFFF
+                    border: 2px solid #E0E0E0
+                    box-sizing: border-box
+                    border-radius: 4px
+                    padding: 8px 12px
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 24px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                    max-height: 40px
+                    &:focus
+                        border: 2px solid #E65F05
+                        .task-content-left-list-svg
+                            path
+                                fill: #E65F05
+
+            
+            .task-content-left-list-svg
+                display: flex
+                svg
+                    margin-right: 29px
+                    cursor: pointer
+
+
+
+#ed
+    padding: 30px 24px 24px 24px
+    background: #FFFFFF
+    box-shadow: 0px 2px 4px rgba(18, 18, 18, 0.1), 0px 16px 32px rgba(18, 18, 18, 0.16)
+    border-radius: 8px
+    min-width: 612px
+    max-width: 612px
+    overflow-x: hidden
+    .fancybox-close-small
+        border: 1px solid #E0E0E0
+        border-radius: 100%
+        right: 12px
+        top: 12px
+        outline: none
+        svg
+            path
+                fill: #B2B2B3
+    .list-title
+        h2
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #1B1D22
+    .line
+        width: 612px
+        height: 1px
+        background: #E0E0E0
+        margin-top: 22px
+        margin-bottom: 24px
+        left: -24px
+        position: relative
+    form
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        .buttons
+            width: 100%
+            margin-top: 12px
+            button
+                cu
+
+                &:first-child
+                    margin-right: 7px
+                    background: #E65F05
+                    border-radius: 4px
+                    border: none
+                    padding: 6px 12px
+                    
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #FFFFFF
+                &:nth-child(2)
+                    border: 1px solid #D1D1D1
+                    box-sizing: border-box
+                    border-radius: 4px
+                    padding: 6px 12px
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+                    background: white
+
+        .task-content-left-list-select
+            .lb
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                margin-bottom: 8px
+                display: block
+        .task-content-left-list-input
+            display: flex
+            flex-direction: column
+            margin-right: 8px
+            label
+                font-family: Inter,sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+            input
+                min-width: 319px
+                background: #FFFFFF
+                border: 2px solid #E0E0E0
+                box-sizing: border-box
+                border-radius: 4px
+                padding: 8px 12px
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 24px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                margin-top: 8px
+                max-height: 40px
+
+
+
+.add-to-do-inp
+    flex-direction: row!important
+    .add-to-do-inp-item
+        min-width: 525px!important
+        margin-right: 12px
+    .due-inp
+        min-width: unset!important
+        border: none!important

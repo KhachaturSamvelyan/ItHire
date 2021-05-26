@@ -1,0 +1,896 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header"
+@import "../blocks/footer"
+
+
+.task-content
+    margin-top: 32px
+    background: #FFFFFF
+    box-shadow: 0px 0.1px 0.3px rgba(18, 18, 18, 0.1), 0px 1px 2px rgba(18, 18, 18, 0.16)
+    border-radius: 8px
+    display: flex
+    min-height: 784px
+    margin-bottom: 32px
+    &-left
+        border-right: 1px solid #E0E0E0
+        padding: 24px
+        min-width: 848px
+        .task-content-left-list2
+          display: none
+          form
+            display: flex
+            align-items: center
+
+            .task-content-left-list-input
+              display: flex
+              flex-direction: column
+              margin-right: 8px
+              label
+                font-family: Inter,sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+              input
+                min-width: 488px
+                background: #FFFFFF
+                border: 2px solid #E0E0E0
+                box-sizing: border-box
+                border-radius: 4px
+                padding: 8px 12px
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 24px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                margin-top: 8px
+                max-height: 40px
+
+          
+
+            .task-content-left-list-select
+              display: flex
+              flex-direction: column
+              margin-right: 19px
+              .lb
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                margin-bottom: 8px
+            .task-content-left-list-svg
+              margin-top: 20px
+              display: flex
+              svg
+                margin-right: 29px
+                cursor: pointer
+        .task-project
+            .task-line
+                width: 848px
+                height: 1px
+                background: #E0E0E0
+                position: relative
+                margin-bottom: 24px
+                margin-top: 30px
+                left: -24px
+        &-title
+            margin-bottom: 24px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .container-mark
+                position: relative
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                cursor: pointer
+                user-select: none
+                padding-left: 28px
+                
+                &:hover
+                    color: #52248F
+                input
+                    position: absolute
+                    opacity: 0
+                    cursor: pointer
+                    height: 0
+                    width: 0
+                    &:checked
+                        ~ .checkmark
+                            background-color: #52248F
+                            border: none
+                            &:after
+                                display: block
+                
+                .checkmark
+                    position: absolute
+                    top: 0
+                    left: 0
+                    height: 20px
+                    width: 20px
+                    background: #FFFFFF
+                    border: 1px solid #C7C7C7
+                    box-sizing: border-box
+                    border-radius: 4px
+
+                    &:after
+                        content: url('../../img/check.svg')
+                        position: absolute
+                        display: none
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        top: 43%
+                   
+            h1
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 28px
+                line-height: 32px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                min-width: 342px
+                margin-right: 24px
+                margin-bottom: 4px
+                span
+                    color: #9D9E9F
+            .job-desc
+                display: flex
+                .tslt
+                    &:not(:last-child)
+                        margin-right: 40px
+                    p
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 13px
+                        line-height: 16px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #78797D
+                        span
+                            color: #1B1D22
+                            margin-left: 5px
+            button
+              background: #E65F05
+              border-radius: 4px
+              border: none
+              padding: 6px 12px
+              font-family: Inter,sans-serif
+              font-style: normal
+              font-weight: 500
+              font-size: 14px
+              line-height: 20px
+              font-feature-settings: 'cv10' on, 'cv05' on
+              color: #FFFFFF
+              cursor: pointer
+              white-space: nowrap
+              svg
+                margin-right: 8px
+
+
+        .line3
+            width: 848px
+            height: 1px
+            background: #E0E0E0
+            position: relative
+            margin-top: 25px
+            margin-bottom: 23px
+            left: -25px
+        &-name
+            display: flex
+            justify-content: space-between
+            &-title
+                .textarea-content
+                    padding: 8px 12px
+                    border: 2px solid #E0E0E0
+                    box-sizing: border-box
+                    border-radius: 4px
+                    .textarea-content-reply
+                        padding: 8px
+                        background: #F8EDE8
+                        border-radius: 4px
+                        display: none
+                        p
+                            font-family: Inter, sans-serif
+                            font-style: normal
+                            font-weight: 500
+                            font-size: 12px
+                            line-height: 16px
+                            font-feature-settings: 'cv10' on, 'cv05' on
+                            color: #1B1D22
+                            span
+                                margin-left: 4px
+                                font-family: Inter, sans-serif
+                                font-style: normal
+                                font-weight: normal
+                                font-size: 12px
+                                line-height: 16px
+                                font-feature-settings: 'cv10' on, 'cv05' on
+                                color: #9D9E9F
+                        .reply-text
+                            font-family: Inter, sans-serif
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 20px
+                            font-feature-settings: 'cv10' on, 'cv05' on
+                            color: #53565A
+                            margin-top: 8px
+                    .text-area-bottom
+                        background: #F5F5F5
+                        padding: 13px
+                        display: flex
+                        justify-content: space-between
+                        max-height: 44px
+                        position: relative
+                        width: 103.1%
+                        right: 12px
+                        bottom: -8px
+                        .text-area-bottom-icon
+                            display: flex
+                            svg
+                                cursor: pointer
+                            &:first-child
+                                svg
+                                    margin-right: 21px
+                        .text-area-bottom-send
+                            display: flex
+                            align-items: center
+                            cursor: pointer
+                            p
+                                font-family: Inter, sans-serif
+                                font-style: normal
+                                font-weight: 500
+                                font-size: 14px
+                                line-height: 20px
+                                font-feature-settings: 'cv10' on, 'cv05' on
+                                color: #9D9E9F
+                                display: block
+                                margin-right: 10px
+
+
+                    textarea
+                        resize: none
+                        min-height: 40px
+                        padding: 8px 12px
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 24px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #1B1D22
+                        border-bottom: none
+                        padding-bottom: 20px
+                        border: none
+                        width: 100%
+                        padding-left: 0
+                        padding-bottom: 0
+                        &::placeholder 
+                            font-family: Inter, sans-serif
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 24px
+                            font-feature-settings: 'cv10' on, 'cv05' on
+                            color: #9D9E9F
+                      
+
+                ul
+                    margin-bottom: 92px
+                    li
+                        display: flex
+                        align-items: flex-start
+                        margin-bottom: 12px
+
+                        img
+                            margin-right: 16px
+                        .job-mail
+                            margin-right: 24px
+                            .job-mail-content-reply
+                                padding-left: 8px
+                                border-left: 2px solid #9D7FC6
+                                p
+                                    font-family: Inter, sans-serif
+                                    font-style: normal
+                                    font-weight: 500
+                                    font-size: 12px
+                                    line-height: 16px
+                                    font-feature-settings: 'cv10' on, 'cv05' on
+                                    color: #1B1D22
+                                    display: flex
+                                    align-items: center
+                                    span
+                                        color: #9D9E9F
+                                        margin-left: 4px
+                                        min-width: unset
+                                        margin-bottom: 0
+                            .job-mail-content
+                                
+                                .job-mail-content-item
+                                    margin-bottom: 12px
+                                    display: flex
+                                    align-items: center
+                                    img
+                                        margin-right: 12px
+                                    p
+                                        font-family: Inter, sans-serif
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 20px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #1B1D22
+                                        margin-bottom: 0
+                                    span
+                                        color: #B2B2B3
+                                        margin-left: 3px
+                                        min-width: unset 
+                                        margin-bottom: 0
+                                    svg
+                                        margin-left: 9px
+                                
+                            p
+                                font-family: Inter, sans-serif
+                                font-style: normal
+                                font-weight: 500
+                                font-size: 13px
+                                line-height: 16px
+                                font-feature-settings: 'cv10' on, 'cv05' on
+                                color: #1B1D22
+                                display: block
+                                margin-bottom: 4px
+                            span
+                                font-family: Inter, sans-serif
+                                font-style: normal
+                                font-weight: normal
+                                font-size: 14px
+                                line-height: 20px
+                                font-feature-settings: 'cv10' on, 'cv05' on
+                                color: #53565A
+                                display: block
+                                margin-bottom: 8px
+                                min-width: 638px
+                            
+                        .mail-time
+                            align-self: flex-end
+                            .mail-time-item
+                                margin-bottom: 12px
+                                display: flex
+                                white-space: nowrap
+                                position: relative
+                                &:hover
+                                    .edit-blok
+                                        visibility: visible
+                                        opacity: 1
+                                .edit-blok
+                                    visibility: hidden
+                                    opacity: 0
+                                    position: absolute
+                                    top: -5px
+                                    right: -8px
+                                    z-index: 999
+                                .edit
+                                    background: #FFFFFF
+                                    box-shadow: 0px 1px 2px rgba(18, 18, 18, 0.08), 0px 8px 16px rgba(18, 18, 18, 0.12)
+                                    border-radius: 8px
+                                    padding: 14px
+                                  
+                                    min-width: 90px
+                                    
+                                    p
+                                        font-family: Inter, sans-serif
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 20px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #1B1D22
+                                        margin-bottom: 12px
+                                        cursor: pointer
+                                    .del
+                                        font-family: Inter, sans-serif
+                                        font-style: normal
+                                        font-weight: normal
+                                        font-size: 14px
+                                        line-height: 20px
+                                        font-feature-settings: 'cv10' on, 'cv05' on
+                                        color: #1B1D22
+                                        
+                                svg
+                                    cursor: pointer
+                                    &:hover
+                                        path
+                                            fill: #53565A
+                                       
+                                span
+                                    font-family: Inter, sans-serif
+                                    font-style: normal
+                                    font-weight: normal
+                                    font-size: 13px
+                                    line-height: 16px
+                                    font-feature-settings: 'cv10' on, 'cv05' on
+                                    color: #9D9E9F
+                                    display: block
+                                    margin-right: 16px
+                                .reply
+                                    margin-right: 8px
+                       
+
+
+
+                .tclnt
+                    display: flex
+                    align-items: center
+                    margin-bottom: 18px
+                    h3
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 20px
+                        line-height: 24px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #1B1D22
+                        margin-right: 8px
+                    p
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 11px
+                        line-height: 16px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #53565A
+                        padding: 2px 6px
+                        background: #EBEBEB
+                        border-radius: 4px
+                        max-height: 20px
+
+                &-p
+                    display: flex
+                    margin-bottom: 18px
+                    p
+                        display: block
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 13px
+                        line-height: 16px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #78797D
+                        span
+                            margin-left: 5px
+                            color: #1B1D22 
+                        
+                        &:first-child
+                            margin-right: 132px
+                
+            &-icon
+                svg
+                    cursor: pointer
+                    &:first-child
+                        margin-right: 28px
+
+
+
+
+
+    &-right
+
+      padding: 24px
+     
+
+
+      h3
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        font-feature-settings: 'cv10' on, 'cv05' on
+        color: #1B1D22
+        min-width: 224px
+        margin-right: 24px
+      
+      ul
+        margin-bottom: 32px
+        .work-li
+          align-items: center
+        li
+          display: flex
+          &:not(:last-child)
+            margin-bottom: 16px
+          p
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 13px
+            line-height: 16px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #78797D
+            display: block
+            min-width: 120px
+            margin-right: 8px
+          span
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 13px
+            line-height: 16px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #1B1D22
+          .colors
+            svg
+              &:not(:last-child)
+                margin-right: 8px
+          .time-now
+            margin-left: 8px
+            background: #E5F6E8
+            border-radius: 4px
+            padding: 4px 6px
+            display: flex
+            svg
+              margin-right: 6px
+            p
+              font-family: Inter, sans-serif
+              font-style: normal
+              font-weight: 500
+              font-size: 11px
+              line-height: 16px
+              font-feature-settings: 'cv10' on, 'cv05' on
+              color: #2B973D
+              min-width: unset
+      .project-member
+       
+        h2
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #1B1D22
+            margin-bottom: 20px
+        .files-content
+            ul
+                li
+                    display: flex
+                    align-items: center
+                    max-width: 352px
+                    cursor: pointer
+                    &:not(:last-child)
+                        border-bottom: 1px solid #E0E0E0
+                        padding-bottom: 14px
+                        margin-bottom: 14px
+                    img
+                        margin-right: 12px
+                        border-radius: 4px
+                    .files-desc
+                        p
+                            font-family: Inter, sans-serif
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 20px
+                            font-feature-settings: 'cv10' on, 'cv05' on
+                            color: #1B1D22
+                        span
+                            font-family: Inter, sans-serif
+                            font-style: normal
+                            font-weight: 500
+                            font-size: 11px
+                            line-height: 16px
+                            font-feature-settings: 'cv10' on, 'cv05' on
+                            color: #78797D
+
+                    
+
+
+
+
+
+
+
+.right-line
+    width: 400px
+    height: 1px
+    background: #E0E0E0
+    margin-top: 32px
+    margin-bottom: 24px
+    position: relative
+    left: -24px
+
+
+
+
+
+
+
+
+      
+.task-content-left-name-title-add-to-do
+    .to-do-content
+        margin-bottom: 20px
+        ul
+            li
+                display: flex
+                align-items: center
+                .li-task
+                    display: flex
+                .num
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 10px
+                    line-height: 12px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #dfdede
+                    padding: 3px 6px
+                    margin-left: 8px
+                    background: #E65F05
+                    border-radius: 100px
+                p
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 20px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                &:not(:last-child)
+                    margin-bottom: 12px
+                svg
+                    margin-right: 8px
+                    min-width: 12px
+                
+                .container
+                    position: relative
+                   
+                    cursor: pointer
+                    user-select: none
+                    padding-left: 28px
+                   
+                    &:hover
+                        color: #E65F05
+                    input
+                        position: absolute
+                        opacity: 0
+                        cursor: pointer
+                        height: 0
+                        width: 0
+                        &:checked
+                            ~ .checkmark
+                                background-color: #2B973D
+                                border: none
+                                &:after
+                                    display: block
+                   
+                    .checkmark
+                        position: absolute
+                        top: 0
+                        left: 0
+                        height: 20px
+                        width: 20px
+                        background: #FFFFFF
+                        border: 1px solid #C7C7C7
+                        box-sizing: border-box
+                        border-radius: 100px
+
+                        &:after
+                            content: url('../../img/check.svg')
+                            position: absolute
+                            display: none
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                            top: 43%
+                .gray
+                    color: #78797D
+    .add-to
+        display: flex
+        align-items: center
+        cursor: pointer
+        svg
+            margin-right: 12px
+        p
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #78797D
+    .task-content-left-list
+        display: none
+        form
+            display: flex
+            align-items: center
+
+            .task-content-left-list-input
+                display: flex
+                flex-direction: column
+                margin-right: 19px
+                label
+                    font-family: Inter,sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 13px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                input
+                    min-width: 716px
+                    background: #FFFFFF
+                    border: 2px solid #E0E0E0
+                    box-sizing: border-box
+                    border-radius: 4px
+                    padding: 8px 12px
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 24px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #1B1D22
+                    max-height: 40px
+                    &:focus
+                        border: 2px solid #E65F05
+                        .task-content-left-list-svg
+                            path
+                                fill: #E65F05
+
+            
+            .task-content-left-list-svg
+                display: flex
+                svg
+                    margin-right: 29px
+                    cursor: pointer
+
+
+
+
+
+.task-content-right-title
+    display: flex
+    align-items: center
+    .progress
+        p
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 12px
+            line-height: 16px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #1B1D22
+            display: block
+            margin-bottom: 8px
+        progress
+            min-width: 80px
+            max-width: 80px
+            display: block
+            background: transparent
+            height: 6px
+            border-radius: 100px
+            margin-left: auto
+            &::-webkit-progress-value
+                background: #52248F
+                border-radius: 100px
+
+            &::-webkit-progress-bar
+                background: #E0E0E0
+                border-radius: 100px
+
+
+.project-member
+    .task-content-left-name-title-add-to-do
+        margin-bottom: 24px
+    .tclntu
+        display: flex
+        align-items: center
+        margin-bottom: 18px
+        h3
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 20px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #1B1D22
+            margin-right: 8px
+        p
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 11px
+            line-height: 16px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #53565A
+            padding: 2px 6px
+            background: #EBEBEB
+            border-radius: 4px
+            max-height: 20px
+
+    ul
+        border-bottom: 1px solid #E0E0E0
+        padding-bottom: 30px
+        max-width: 352px
+
+
+#delete
+    background: #FFFFFF
+    box-shadow: 0px 2px 4px rgba(18, 18, 18, 0.08), 0px 16px 32px rgba(18, 18, 18, 0.12)
+    border-radius: 8px
+    padding: 24px
+    cursor: auto
+    .delete-blok
+        p
+            display: block
+            margin-bottom: 8px
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #1B1D22
+        span
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 24px
+            color: #000000
+            display: block
+            margin-bottom: 24px
+        &-btn
+            display: flex
+            margin-right: 7px
+            .confirm
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #FFFFFF
+                border: none
+                cursor: pointer
+                background: #E65F05
+                border-radius: 4px
+                transition: 0.3s
+                padding: 6px 12px
+                border: 1px solid transparent
+                margin-right: 7px
+                &:hover
+                    background: white
+                    color: #E65F05
+                    border: 1px solid #E65F05
+            .cancel
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #78797D
+                border: none
+                cursor: pointer
+                background: transparent
+                border-radius: 4px
+                transition: 0.3s
+                padding: 6px 12px
+                border: 1px solid #78797D
+                &:hover
+                    background:#78797D
+                    color: white
+                    border: 1px solid white

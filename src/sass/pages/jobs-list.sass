@@ -1,0 +1,232 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header"
+@import "../blocks/footer"
+@import "../blocks/project"
+
+
+
+[data-tab-content]
+    display: none
+.active[data-tab-content]
+    display: block
+.tab
+    cursor: pointer
+
+.tab.active
+    color: #1B1D22
+    position: relative
+    span
+        color: #E65F05
+    &:after
+        content: ""
+        width: 100%
+        height: 2px
+        background: #E65F05
+        position: absolute
+        right: 0
+        bottom: -9px
+
+
+.main-title
+    margin-top: 32px
+    margin-bottom: 24px
+    h1
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 28px
+        line-height: 32px
+        color: #1B1D22
+        span
+            color: #9D9E9F
+
+
+.tabs
+    display: flex
+    margin-bottom: 24px
+    display: flex
+    border-bottom: 1px solid #D1D1D1
+    padding-bottom: 8px
+    li
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 20px
+        font-feature-settings: 'cv10' on, 'cv05' on
+        color: #78797D
+        span
+            color: #9D9E9F
+            margin-left: 5px
+
+        &:not(:last-child)
+            margin-right: 16px
+
+
+.jobs-content
+    background: #FFFFFF
+    box-shadow: 0px 0.1px 0.3px rgba(18, 18, 18, 0.1), 0px 1px 2px rgba(18, 18, 18, 0.16)
+    border-radius: 8px
+    margin-bottom: 16px
+    .jobs-title
+        display: flex
+        &-item
+            padding: 30px 24px
+            display: flex
+            align-items: center
+            min-width: 312px
+            justify-content: space-between
+            &:not(:last-child)
+                border-right:  1px solid #E0E0E0
+            p 
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #53565A
+                display: block
+                margin-right: 82px
+            span
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 32px
+                line-height: 36px
+                text-align: right
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #52248F
+
+.jobs-content-main
+    background: #FFFFFF
+    box-shadow: 0px 0.1px 0.3px rgba(18, 18, 18, 0.1), 0px 1px 2px rgba(18, 18, 18, 0.16)
+    border-radius: 8px
+    padding: 24px
+    .line-g
+        margin-top: 24px
+        margin-bottom: 24px
+        left: -24px
+        position: relative
+        width: 1248px
+        height: 1px
+        background: #E0E0E0
+    &-item
+        display: flex
+        align-items: center
+        &-title
+            min-width: 800px
+            margin-right: 24px
+            h2
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                margin-bottom: 12px
+            &-p
+                display: flex
+                p
+                    font-family: Inter, sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 13px
+                    line-height: 16px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+                    display: block
+                    span
+                        color:  #1B1D22
+                        margin-left: 4px
+                    &:not(:last-child)
+                        margin-right: 40px
+
+        &-title-task
+            display: flex
+            margin-right: 40px
+            align-items: center
+            p
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                display: block
+                margin-right: 4px
+            span
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 600
+                font-size: 10px
+                line-height: 12px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #FFFFFF
+                padding: 3px 6px
+                background: #E65F05
+                border-radius: 100px
+        &-title-done
+            display: flex
+            align-items: center
+            p
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                display: block
+                margin-right: 4px
+            span
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 600
+                font-size: 10px
+                line-height: 12px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                padding: 3px 6px
+                border: 1px solid #D1D1D1
+                box-sizing: border-box
+                border-radius: 100px
+
+
+        &-title-screen
+            a
+                display: flex
+                align-items: center
+                margin-left: 46px
+            p
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 13px
+                line-height: 16px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                display: block
+                margin-left: 9px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

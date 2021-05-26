@@ -1,0 +1,97 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header"
+@import "../blocks/footer"
+@import "../blocks/project"
+
+
+
+[data-tab-content]
+    display: none
+.active[data-tab-content]
+    display: block
+.tab
+    cursor: pointer
+
+.tab.active
+    color: #1B1D22
+    position: relative
+    span
+        color: #E65F05
+    &:after
+        content: ""
+        width: 100%
+        height: 2px
+        background: #E65F05
+        position: absolute
+        right: 0
+        bottom: -9px
+
+
+.main-title
+    margin-top: 32px
+    margin-bottom: 23px
+    h1
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 28px
+        line-height: 32px
+        color: #1B1D22
+        span
+            color: #9D9E9F
+    .main-title-flex
+        display: flex
+        align-items: center
+        justify-content: space-between
+        form
+            min-width: 360px
+            position: relative
+            input
+                width: 100%
+                font-family: 'Inter', sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 24px
+                color: #78797D
+                background: #FFFFFF
+                border: 2px solid #E0E0E0
+                box-sizing: border-box
+                border-radius: 4px
+                padding: 6px
+                padding-left: 36px
+                &::placeholder
+                    font-family: 'Inter', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 24px
+                    font-feature-settings: 'cv10' on, 'cv05' on
+                    color: #78797D
+            svg
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 9px
+
+.tabs
+    display: flex
+    margin-bottom: 24px
+    display: flex
+    border-bottom: 1px solid #D1D1D1
+    padding-bottom: 8px
+    li
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 20px
+        font-feature-settings: 'cv10' on, 'cv05' on
+        color: #78797D
+        span
+            color: #9D9E9F
+            margin-left: 5px
+
+        &:not(:last-child)
+            margin-right: 16px

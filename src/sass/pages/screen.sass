@@ -1,0 +1,137 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header"
+@import "../blocks/footer"
+
+
+.screen-main
+    max-width: 1248px
+    margin: 0  auto
+    margin-bottom: 80px
+    h1
+        font-family: Inter, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 28px
+        line-height: 32px
+        font-feature-settings: 'cv10' on, 'cv05' on
+        color: #1B1D22
+        margin-top: 32px
+        margin-bottom: 24px
+    &-date
+        display: flex
+        align-items: center
+        &-item
+            display: flex
+            align-items: center
+           
+            svg
+                cursor: pointer
+            input
+                border: none
+                background: transparent
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 20px
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                display: block
+                margin-left: 22px
+                max-width: 140px
+            .calendar-icon
+                margin-left: 9px
+                margin-right: 24px
+     
+        span
+            display: block
+            margin-left: 46px
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 20px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #E65F05
+
+
+    &-content
+        margin-top: 34px
+        background: #FFFFFF
+        box-shadow: 0px 0.1px 0.3px rgba(18, 18, 18, 0.06), 0px 1px 2px rgba(18, 18, 18, 0.14)
+        border-radius: 8px
+        padding: 24px
+        p
+            font-family: Inter, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            font-feature-settings: 'cv10' on, 'cv05' on
+            color: #1B1D22
+            display: block
+            margin-bottom: 32px
+        &-blok
+            display: flex
+            align-items: center
+         
+            margin-bottom: 24px
+            &:not(:last-child)
+                padding-bottom: 24px
+                border-bottom: 1px solid #E0E0E0
+            .num
+                margin-right: 16px
+                font-family: Inter, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 20px
+                text-align: center
+                font-feature-settings: 'cv10' on, 'cv05' on
+                color: #1B1D22
+                padding: 22px 13px
+                background: #F5F5F5
+            &-item
+                display: flex
+                &-screen
+                    max-width: 177px
+                    &:not(:last-child)
+                        margin-right: 16px
+                a
+                    position: relative
+                    display: inline-block
+                    &:hover
+                        .overlay
+                            opacity: 1
+                            visibility: visible
+                    img
+                        border: 1px solid rgba(0, 0, 0, 0.16)
+                    .overlay
+                        width: 100%
+                        background: rgba(0, 0, 0, 0.6)
+                        z-index: 9
+                        height: 100%
+                        display: flex
+                        top: 0
+                        justify-content: center
+                        align-items: center
+                        position: absolute
+                        opacity: 0
+                        visibility: hidden
+                        transition: 0.3s
+                
+                &-time
+                    display: flex
+                    justify-content: space-between
+                    margin-top: 8px
+                    span
+                        font-family: Inter, sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 13px
+                        line-height: 16px
+                        font-feature-settings: 'cv10' on, 'cv05' on
+                        color: #1B1D22
+                    svg
+                        cursor: pointer

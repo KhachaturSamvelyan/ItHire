@@ -1,0 +1,127 @@
+extends ../layout/layout.pug
+
+block variables
+	- var title = 'ITHIRE';
+
+block links
+	- var link = 'main.css';
+
+block scripts
+	- var js = 'index.js';
+
+block header
+	include ../blocks/header.pug
+
+block content
+	section.main-title
+		.container
+			.main-title-flex
+				h1 Hires 
+					span (192)
+				form(action="")
+					svg(xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none")
+						path(d="M14.0259 12.8475L17.595 16.4158L16.4159 17.595L12.8475 14.0258C11.5198 15.0902 9.86835 15.6691 8.16669 15.6667C4.02669 15.6667 0.666687 12.3067 0.666687 8.16667C0.666687 4.02667 4.02669 0.666666 8.16669 0.666666C12.3067 0.666666 15.6667 4.02667 15.6667 8.16667C15.6691 9.86833 15.0902 11.5198 14.0259 12.8475ZM12.3542 12.2292C13.4118 11.1416 14.0024 9.68369 14 8.16667C14 4.94333 11.3892 2.33333 8.16669 2.33333C4.94335 2.33333 2.33335 4.94333 2.33335 8.16667C2.33335 11.3892 4.94335 14 8.16669 14C9.68371 14.0024 11.1416 13.4118 12.2292 12.3542L12.3542 12.2292Z" fill="#78797D")
+					input(type="text" placeholder="Search by ID, PayPal, Client Name") 
+	section.main
+		.container
+			ul.tabs
+				li(data-tab-target="#all" class="active tab") All
+				li(data-tab-target="#Unassigned" class="tab") Unassigned 
+					span (0)
+				li(data-tab-target="#team1" class="tab") Team 1 
+					span (31)
+				li(data-tab-target="#team2" class="tab") Team 2
+					span (16)
+				li(data-tab-target="#team3" class="tab") Team 3
+					span (30)
+				li(data-tab-target="#team4" class="tab") Team 4
+					span (18)
+				li(data-tab-target="#team5" class="tab") Team 5
+					span (1)
+				li(data-tab-target="#team6" class="tab") Team 6
+					span (5)
+				li(data-tab-target="#team7" class="tab") Team 7
+					span (18)
+				li(data-tab-target="#proj" class="tab") Projects to be charged
+					span (2)
+			.tab-content
+				div(id="all" data-tab-content class="active")
+					block project
+						include ../blocks/project.pug
+					
+				div(id="Unassigned" data-tab-content )
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					
+				div(id="team1" data-tab-content )
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+				div(id="team2" data-tab-content )
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+				div(id="team3" data-tab-content )
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+				div(id="team4" data-tab-content )
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+				div(id="team5" data-tab-content )
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+				div(id="team6" data-tab-content )
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+				div(id="team7" data-tab-content )
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+				div(id="proj" data-tab-content )
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+					block project
+						include ../blocks/project.pug
+			
+			
